@@ -11,6 +11,10 @@ Welcome to Coding Club's documentation!
    :caption: Contents:
 
 
+   small_projects/bagels.rst
+   small_projects/birthday_paradox.rst
+   small_projects/bitmap_message.rst
+   small_projects/blackjack.rst
 
 Indices and tables
 ==================
