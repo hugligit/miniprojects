@@ -13,7 +13,10 @@ author = 'Marcel Hrdina'
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-extensions = ["sphinx_tags", "sphinx_rtd_theme"]
+extensions = [
+        "sphinx_tags",
+        "sphinx_rtd_theme",
+        "sphinx_toolbox.collapse",]
 
 templates_path = ['_templates']
 exclude_patterns = []
@@ -28,3 +31,10 @@ html_static_path = ['_static']
 
 
 tags_create_tags = True
+
+html_theme_options = {
+        'collapse_navigation': False,
+        'sticky_navigation': True,
+        'navigation_depth': 4,
+        'titles_only': False,
+        }
