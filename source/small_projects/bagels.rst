@@ -50,8 +50,9 @@ Do you want to play again? (yes or no)
 >>> no
 Thanks for playing!
 
+.. collapse:: bagels.py
 
-.. literalinclude:: bagels.py
-   :language: python
-   :linenos:
-   :emphasize-lines: 12, 15-18
+   .. literalinclude:: bagels.py
+      :language: python
+      :linenos:
+      :emphasize-lines: 12, 15-18

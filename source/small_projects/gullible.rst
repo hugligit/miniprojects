@@ -1,16 +1,23 @@
 ********
-gullible
+Gullible
 ********
 
 
 .. tags:: tiny, beginner, humour
 
 
-description
+
+In this short and simple program, you can learn the secret and subtle art of
+keeping a gullible person busy for hours. I won’t spoil the punch line here.
+Copy the code and run it for yourself. This project is great for beginners,
+whether you’re smart or . . . not so smart.
 
 
-.. literalinclude:: gullible.py
-   :language: python
+.. collapse:: gullible.py
+
+   .. literalinclude:: gullible.py
+      :language: python
+      :linenos:
 
 
-https://inventwithpython.com/bigbookpython/project1.html
+https://inventwithpython.com/bigbookpython/project32.html
