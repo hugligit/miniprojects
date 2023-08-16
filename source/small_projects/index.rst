@@ -67,7 +67,7 @@ The Big Book of Small Python Projects
    progress_bar.rst
    rainbow.rst
    rock_paper_scissors.rst
-   rock_paper_scissors_(always-win_version).rst
+   rock_paper_scissors_always-win_version.rst
    rot13_cipher.rst
    rotating_cube.rst
    royal_game_of_ur.rst

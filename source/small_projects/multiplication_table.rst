@@ -1,16 +1,21 @@
 ********************
-multiplication_table
+Multiplication Table
 ********************
 
 
 .. tags:: tiny, beginner, math
 
 
-description
+
+This program generates a multiplication table from 0 × 0 to 12 × 12. While
+simple, it provides a useful demonstration of nested loops.
 
 
-.. literalinclude:: multiplication_table.py
-   :language: python
+.. collapse:: multiplication_table.py
+
+   .. literalinclude:: multiplication_table.py
+      :language: python
+      :linenos:
 
 
-https://inventwithpython.com/bigbookpython/project1.html
+https://inventwithpython.com/bigbookpython/project49.html
