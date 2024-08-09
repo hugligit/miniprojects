@@ -1,0 +1,34 @@
+My tags: large
+##############
+
+.. toctree::
+    :maxdepth: 1
+    :caption: With this tag
+
+    ../small_projects/blackjack.rst
+    ../small_projects/carrot_in_a_box.rst
+    ../small_projects/clickbait_headline_generator.rst
+    ../small_projects/dice_math.rst
+    ../small_projects/ducklings.rst
+    ../small_projects/etching_drawer.rst
+    ../small_projects/flooder.rst
+    ../small_projects/four_in_a_row.rst
+    ../small_projects/hacking_minigame.rst
+    ../small_projects/hangman_and_guillotine.rst
+    ../small_projects/hourglass.rst
+    ../small_projects/hungry_robots.rst
+    ../small_projects/langtons_ant.rst
+    ../small_projects/lucky_stars.rst
+    ../small_projects/mancala.rst
+    ../small_projects/maze_runner_2d.rst
+    ../small_projects/mondrian_art_generator.rst
+    ../small_projects/monty_hall.rst
+    ../small_projects/rotating_cube.rst
+    ../small_projects/royal_game_of_ur.rst
+    ../small_projects/sliding_tile_puzzle.rst
+    ../small_projects/soroban_japanese_abacus.rst
+    ../small_projects/sudoku_puzzle.rst
+    ../small_projects/three-card_monte.rst
+    ../small_projects/trick_questions.rst
+    ../small_projects/twenty_forty_eight.rst
+    ../small_projects/water_bucket_puzzle.rst

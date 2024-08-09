@@ -1,0 +1,51 @@
+My tags: game
+#############
+
+.. toctree::
+    :maxdepth: 1
+    :caption: With this tag
+
+    ../games/asteroids.rst
+    ../games/bird.rst
+    ../games/blackjack.rst
+    ../games/blocks.rst
+    ../games/eyes.rst
+    ../games/fifteen.rst
+    ../games/flowers.rst
+    ../games/ghoulash.rst
+    ../games/hangman.rst
+    ../games/life.rst
+    ../games/poker_dice.rst
+    ../games/rock_paper_scissors.rst
+    ../games/snake.rst
+    ../games/sokoban.rst
+    ../small_projects/bagels.rst
+    ../small_projects/blackjack.rst
+    ../small_projects/carrot_in_a_box.rst
+    ../small_projects/cho_han.rst
+    ../small_projects/dice_math.rst
+    ../small_projects/fast_draw.rst
+    ../small_projects/flooder.rst
+    ../small_projects/four_in_a_row.rst
+    ../small_projects/guess_the_number.rst
+    ../small_projects/hacking_minigame.rst
+    ../small_projects/hangman_and_guillotine.rst
+    ../small_projects/hungry_robots.rst
+    ../small_projects/jaccuse.rst
+    ../small_projects/lucky_stars.rst
+    ../small_projects/mancala.rst
+    ../small_projects/maze_runner_2d.rst
+    ../small_projects/maze_runner_3d.rst
+    ../small_projects/monty_hall.rst
+    ../small_projects/rock_paper_scissors.rst
+    ../small_projects/rock_paper_scissors_always-win_version.rst
+    ../small_projects/royal_game_of_ur.rst
+    ../small_projects/sliding_tile_puzzle.rst
+    ../small_projects/snail_race.rst
+    ../small_projects/sound_mimic.rst
+    ../small_projects/sudoku_puzzle.rst
+    ../small_projects/three-card_monte.rst
+    ../small_projects/tic-tac-toe.rst
+    ../small_projects/tower_of_hanoi.rst
+    ../small_projects/twenty_forty_eight.rst
+    ../small_projects/water_bucket_puzzle.rst

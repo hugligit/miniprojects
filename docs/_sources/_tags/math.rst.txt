@@ -1,0 +1,24 @@
+My tags: math
+#############
+
+.. toctree::
+    :maxdepth: 1
+    :caption: With this tag
+
+    ../small_projects/birthday_paradox.rst
+    ../small_projects/caesar_cipher.rst
+    ../small_projects/caesar_hacker.rst
+    ../small_projects/collatz_sequence.rst
+    ../small_projects/dice_math.rst
+    ../small_projects/factor_finder.rst
+    ../small_projects/fibonacci.rst
+    ../small_projects/million_dice_statistics.rst
+    ../small_projects/monty_hall.rst
+    ../small_projects/multiplication_table.rst
+    ../small_projects/numeral_systems.rst
+    ../small_projects/prime_numbers.rst
+    ../small_projects/rotating_cube.rst
+    ../small_projects/simple_substitution_cipher.rst
+    ../small_projects/soroban_japanese_abacus.rst
+    ../small_projects/vigenere_cipher.rst
+    ../small_projects/water_bucket_puzzle.rst

@@ -1,0 +1,15 @@
+My tags: bext
+#############
+
+.. toctree::
+    :maxdepth: 1
+    :caption: With this tag
+
+    ../small_projects/bouncing_dvd_logo.rst
+    ../small_projects/fish_tank.rst
+    ../small_projects/flooder.rst
+    ../small_projects/forest_fire_sim.rst
+    ../small_projects/hourglass.rst
+    ../small_projects/langtons_ant.rst
+    ../small_projects/mondrian_art_generator.rst
+    ../small_projects/rainbow.rst

@@ -1,0 +1,9 @@
+My tags: multiplayer
+####################
+
+.. toctree::
+    :maxdepth: 1
+    :caption: With this tag
+
+    ../small_projects/lucky_stars.rst
+    ../small_projects/snail_race.rst

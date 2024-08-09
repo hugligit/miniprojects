@@ -1,0 +1,18 @@
+My tags: pgzero
+###############
+
+.. toctree::
+    :maxdepth: 1
+    :caption: With this tag
+
+    ../games/asteroids.rst
+    ../games/bird.rst
+    ../games/blackjack.rst
+    ../games/blocks.rst
+    ../games/eyes.rst
+    ../games/fifteen.rst
+    ../games/flowers.rst
+    ../games/ghoulash.rst
+    ../games/life.rst
+    ../games/snake.rst
+    ../games/sokoban.rst

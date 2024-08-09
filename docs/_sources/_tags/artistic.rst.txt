@@ -1,0 +1,32 @@
+My tags: artistic
+#################
+
+.. toctree::
+    :maxdepth: 1
+    :caption: With this tag
+
+    ../small_projects/bitmap_message.rst
+    ../small_projects/bouncing_dvd_logo.rst
+    ../small_projects/conways_game_of_life.rst
+    ../small_projects/countdown.rst
+    ../small_projects/deep_cave.rst
+    ../small_projects/diamonds.rst
+    ../small_projects/dice_math.rst
+    ../small_projects/digital_clock.rst
+    ../small_projects/digital_stream.rst
+    ../small_projects/dna_visualization.rst
+    ../small_projects/ducklings.rst
+    ../small_projects/etching_drawer.rst
+    ../small_projects/fish_tank.rst
+    ../small_projects/hacking_minigame.rst
+    ../small_projects/hex_grid.rst
+    ../small_projects/hourglass.rst
+    ../small_projects/langtons_ant.rst
+    ../small_projects/maze_runner_3d.rst
+    ../small_projects/mondrian_art_generator.rst
+    ../small_projects/rainbow.rst
+    ../small_projects/rotating_cube.rst
+    ../small_projects/shining_carpet.rst
+    ../small_projects/sine_message.rst
+    ../small_projects/snail_race.rst
+    ../small_projects/soroban_japanese_abacus.rst

@@ -1,0 +1,12 @@
+My tags: twoplayer
+##################
+
+.. toctree::
+    :maxdepth: 1
+    :caption: With this tag
+
+    ../small_projects/carrot_in_a_box.rst
+    ../small_projects/four_in_a_row.rst
+    ../small_projects/mancala.rst
+    ../small_projects/royal_game_of_ur.rst
+    ../small_projects/tic-tac-toe.rst

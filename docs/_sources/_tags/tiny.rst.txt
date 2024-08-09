@@ -1,0 +1,35 @@
+My tags: tiny
+#############
+
+.. toctree::
+    :maxdepth: 1
+    :caption: With this tag
+
+    ../small_projects/bitmap_message.rst
+    ../small_projects/caesar_hacker.rst
+    ../small_projects/collatz_sequence.rst
+    ../small_projects/countdown.rst
+    ../small_projects/deep_cave.rst
+    ../small_projects/diamonds.rst
+    ../small_projects/digital_clock.rst
+    ../small_projects/digital_stream.rst
+    ../small_projects/factor_finder.rst
+    ../small_projects/fast_draw.rst
+    ../small_projects/guess_the_number.rst
+    ../small_projects/gullible.rst
+    ../small_projects/hex_grid.rst
+    ../small_projects/leetspeak.rst
+    ../small_projects/magic_fortune_ball.rst
+    ../small_projects/million_dice_statistics.rst
+    ../small_projects/multiplication_table.rst
+    ../small_projects/ninety_nine_bottles.rst
+    ../small_projects/numeral_systems.rst
+    ../small_projects/prime_numbers.rst
+    ../small_projects/progress_bar.rst
+    ../small_projects/rainbow.rst
+    ../small_projects/rock_paper_scissors_always-win_version.rst
+    ../small_projects/rot13_cipher.rst
+    ../small_projects/shining_carpet.rst
+    ../small_projects/sine_message.rst
+    ../small_projects/spongecase.rst
+    ../small_projects/text_to_speech_talker.rst

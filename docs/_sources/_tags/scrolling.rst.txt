@@ -1,0 +1,15 @@
+My tags: scrolling
+##################
+
+.. toctree::
+    :maxdepth: 1
+    :caption: With this tag
+
+    ../small_projects/deep_cave.rst
+    ../small_projects/digital_stream.rst
+    ../small_projects/dna_visualization.rst
+    ../small_projects/ducklings.rst
+    ../small_projects/ninety_nine_bottles.rst
+    ../small_projects/ninety_nniine_boottels.rst
+    ../small_projects/prime_numbers.rst
+    ../small_projects/rainbow.rst

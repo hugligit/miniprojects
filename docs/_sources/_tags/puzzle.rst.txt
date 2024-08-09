@@ -1,0 +1,16 @@
+My tags: puzzle
+###############
+
+.. toctree::
+    :maxdepth: 1
+    :caption: With this tag
+
+    ../small_projects/bagels.rst
+    ../small_projects/hacking_minigame.rst
+    ../small_projects/hangman_and_guillotine.rst
+    ../small_projects/jaccuse.rst
+    ../small_projects/sliding_tile_puzzle.rst
+    ../small_projects/sudoku_puzzle.rst
+    ../small_projects/tower_of_hanoi.rst
+    ../small_projects/twenty_forty_eight.rst
+    ../small_projects/water_bucket_puzzle.rst

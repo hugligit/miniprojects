@@ -1,0 +1,29 @@
+My tags: short
+##############
+
+.. toctree::
+    :maxdepth: 1
+    :caption: With this tag
+
+    ../small_projects/bagels.rst
+    ../small_projects/bouncing_dvd_logo.rst
+    ../small_projects/caesar_cipher.rst
+    ../small_projects/calendar_maker.rst
+    ../small_projects/cho_han.rst
+    ../small_projects/conways_game_of_life.rst
+    ../small_projects/dice_roller.rst
+    ../small_projects/dna_visualization.rst
+    ../small_projects/fibonacci.rst
+    ../small_projects/forest_fire_sim.rst
+    ../small_projects/ninety_nniine_boottels.rst
+    ../small_projects/periodic_table_of_the_elements.rst
+    ../small_projects/pig_latin.rst
+    ../small_projects/powerball_lottery.rst
+    ../small_projects/rock_paper_scissors.rst
+    ../small_projects/seven-segment_display_module.rst
+    ../small_projects/simple_substitution_cipher.rst
+    ../small_projects/snail_race.rst
+    ../small_projects/sound_mimic.rst
+    ../small_projects/tic-tac-toe.rst
+    ../small_projects/tower_of_hanoi.rst
+    ../small_projects/vigenere_cipher.rst

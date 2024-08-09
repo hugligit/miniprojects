@@ -1,0 +1,14 @@
+My tags: humour
+###############
+
+.. toctree::
+    :maxdepth: 1
+    :caption: With this tag
+
+    ../small_projects/clickbait_headline_generator.rst
+    ../small_projects/gullible.rst
+    ../small_projects/jaccuse.rst
+    ../small_projects/magic_fortune_ball.rst
+    ../small_projects/powerball_lottery.rst
+    ../small_projects/rock_paper_scissors_always-win_version.rst
+    ../small_projects/trick_questions.rst

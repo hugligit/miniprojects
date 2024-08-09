@@ -1,0 +1,13 @@
+My tags: word
+#############
+
+.. toctree::
+    :maxdepth: 1
+    :caption: With this tag
+
+    ../small_projects/clickbait_headline_generator.rst
+    ../small_projects/hangman_and_guillotine.rst
+    ../small_projects/leetspeak.rst
+    ../small_projects/ninety_nniine_boottels.rst
+    ../small_projects/pig_latin.rst
+    ../small_projects/spongecase.rst

@@ -1,0 +1,10 @@
+My tags: terminal
+#################
+
+.. toctree::
+    :maxdepth: 1
+    :caption: With this tag
+
+    ../games/hangman.rst
+    ../games/poker_dice.rst
+    ../games/rock_paper_scissors.rst

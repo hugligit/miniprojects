@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coding Math &mdash; Coding Club  documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Shaders" href="../shaders/index.html" />
+    <link rel="prev" title="Vigenere Cipher" href="../cryptography/vigenere.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            Coding Club
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../small_projects/index.html">The Big Book of Small Python Projects</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../small_projects/bagels.html">Bagels</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../small_projects/birthday_paradox.html">Birthday Paradox</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../small_projects/bitmap_message.html">Bitmap Message</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../small_projects/blackjack.html">Blackjack</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../small_projects/bouncing_dvd_logo.html">Bouncing DVD Logo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../small_projects/caesar_cipher.html">Caesar Cipher</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../small_projects/caesar_hacker.html">Caesar Hacker</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../small_projects/calendar_maker.html">Calendar Maker</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../small_projects/carrot_in_a_box.html">Carrot in a Box</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../small_projects/cho_han.html">CHO HAN</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../small_projects/clickbait_headline_generator.html">Clickbait Headline Generator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../small_projects/collatz_sequence.html">Collatz Sequence</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../small_projects/conways_game_of_life.html">Conways Game of Life</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../small_projects/countdown.html">Countdown</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../small_projects/deep_cave.html">Deep Cave</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../small_projects/diamonds.html">Diamonds</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../small_projects/dice_math.html">Dice Math</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../small_projects/dice_roller.html">Dice Roller</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../small_projects/digital_clock.html">Digital Clock</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../small_projects/digital_stream.html">Digital Stream</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../small_projects/dna_visualization.html">DNA Visualization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../small_projects/ducklings.html">Ducklings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../small_projects/etching_drawer.html">Etching Drawer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../small_projects/factor_finder.html">Factor Finder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../small_projects/fast_draw.html">Fast Draw</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../small_projects/fibonacci.html">Fibonacci</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../small_projects/fish_tank.html">Fish Tank</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../small_projects/flooder.html">Flooder</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../small_projects/flooder.html#how-it-works">How It Works</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../small_projects/forest_fire_sim.html">Forest Fire Sim</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../small_projects/four_in_a_row.html">Four in a Row</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../small_projects/guess_the_number.html">Guess the Number</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../small_projects/gullible.html">Gullible</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../small_projects/hacking_minigame.html">Hacking Minigame</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../small_projects/hangman_and_guillotine.html">Hangman and Guillotine</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../small_projects/hex_grid.html">HEX Grid</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../small_projects/hourglass.html">Hourglass</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../small_projects/hungry_robots.html">Hungry Robots</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../small_projects/jaccuse.html">J’accuse</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../small_projects/langtons_ant.html">Langtons Ant</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../small_projects/leetspeak.html">L3375P34]&lt;</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../small_projects/lucky_stars.html">Lucky Stars</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../small_projects/magic_fortune_ball.html">Magic Fortune Ball</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../small_projects/mancala.html">Mancala</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../small_projects/maze_runner_2d.html">Maze Runner 2D</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../small_projects/maze_runner_3d.html">Maze Runner 3D</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../small_projects/million_dice_statistics.html">Million Dice Statistics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../small_projects/mondrian_art_generator.html">Mondrian Art Generator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../small_projects/monty_hall.html">Monty Hall</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../small_projects/multiplication_table.html">Multiplication Table</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../small_projects/ninety_nine_bottles.html">Ninety Nine Bottles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../small_projects/ninety_nniine_boottels.html">Ninety Nniine Boottels</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../small_projects/numeral_systems.html">Numeral Systems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../small_projects/periodic_table_of_the_elements.html">Periodic Table of the Elements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../small_projects/pig_latin.html">Pig Latin</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../small_projects/powerball_lottery.html">Powerball Lottery</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../small_projects/prime_numbers.html">Prime Numbers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../small_projects/progress_bar.html">Progress Bar</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../small_projects/rainbow.html">Rainbow</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../small_projects/rock_paper_scissors.html">Rock Paper Scissors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../small_projects/rock_paper_scissors_always-win_version.html">Rock Paper Scissors (Always Win Version)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../small_projects/rot13_cipher.html">ROT13 Cipher</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../small_projects/rotating_cube.html">Rotating Cube</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../small_projects/royal_game_of_ur.html">Royal Game of Ur</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../small_projects/seven-segment_display_module.html">Seven Segment Display Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../small_projects/shining_carpet.html">Shining Carpet</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../small_projects/simple_substitution_cipher.html">Simple Substitution Cipher</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../small_projects/sine_message.html">Sine Message</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../small_projects/sliding_tile_puzzle.html">Sliding Tile Puzzle</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../small_projects/snail_race.html">Snail Race</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../small_projects/soroban_japanese_abacus.html">Soroban Japanese Abacus</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../small_projects/sound_mimic.html">Sound Mimic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../small_projects/spongecase.html">Spongecase</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../small_projects/sudoku_puzzle.html">Sudoku Puzzle</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../small_projects/text_to_speech_talker.html">Text to Speech Talker</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../small_projects/three-card_monte.html">Three Card Monte</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../small_projects/tic-tac-toe.html">Tic-Tac-Toe</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../small_projects/tower_of_hanoi.html">Tower of Hanoi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../small_projects/trick_questions.html">Trick Questions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../small_projects/twenty_forty_eight.html">Twenty Forty Eight</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../small_projects/vigenere_cipher.html">Vigenere Cipher</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../small_projects/water_bucket_puzzle.html">Water Bucket Puzzle</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../cryptography/index.html">Cracking Codes with Python</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../cryptography/reverse.html">Reverse Cipher</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cryptography/caesar.html">Caesar Cipher</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cryptography/transposition.html">Transposition Cipher</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cryptography/affine.html">Affine Cipher</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cryptography/simple_substitution.html">Simple Substitution Cipher</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cryptography/vigenere.html">Vigenere Cipher</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Coding Math</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#introduction">1 - Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#intro-to-trigonometry">2 - Intro to Trigonometry</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#more-trigonometry">3 - More Trigonometry</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#circles-ellipses-and-lissajous-curves">4 - Circles, Ellipses and Lissajous Curves</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#arctangent">5 - Arctangent</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#vectors-part-i">6 - Vectors, Part I</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#vectors-part-2">7 - Vectors Part 2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#velocity">8 - Velocity</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#acceleration">9 - Acceleration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#advanced-acceleration">10 - Advanced Acceleration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#gravity">11 - Gravity</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#edge-handling">12 - Edge Handling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#friction">13 - Friction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#collision-detection">14 - Collision Detection</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#springs-part-1">15 - Springs Part 1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#springs-part-2">16 - Springs Part 2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#particles-optimization">17 - Particles - Optimization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#particles-enhancements">18 - Particles - Enhancements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#bezier-curves">19 - Bezier Curves</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#more-on-bezier-curves">20 - More on Bezier Curves</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#bitmap-collision-detection">21 - Bitmap Collision Detection</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#d-postcards-in-space">22 - 3D - Postcards in Space</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#d-carousel">23 - 3D Carousel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#d-points-and-lines">24: 3D Points and Lines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#d-modeling-points-and-lines-part-2">25 - 3D Modeling, Points and Lines Part 2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#d-and-3d-coordinate-rotation">26 - 2D and 3D Coordinate Rotation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#easing-and-tweening">27 - Easing and Tweening</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#more-on-easing">28 - More on Easing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#tweening-part-1">29 - Tweening Part 1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#tweening-part-ii">30 - Tweening Part II</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#tweening-part-iii">31 - Tweening Part III</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#line-intersections-part-i">32 - Line Intersections Part I</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#line-intersections-part-ii">33 - Line Intersections Part II</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#line-intersections-part-iii">34 - Line Intersections Part III</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#intro-to-fractals">35 - Intro to Fractals</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#verlet-integration-part-i">36 - Verlet Integration Part I</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#verlet-integration-part-ii">37 - Verlet Integration Part II</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#verlet-integration-part-iii">38 - Verlet Integration Part III</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#verlet-integration-part-iv">39 - Verlet Integration Part IV</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#fractal-trees">40 - Fractal Trees</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#isometric-3d-part-i">41 - Isometric 3D Part I</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#isometric-3d-part-ii">42 - Isometric 3D Part II</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id1">42 - Isometric 3D Part II</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#kinematics-part-i">43 - Kinematics Part I</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#kinematics-part-ii">44 - Kinematics Part II</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#kinematics-part-iii">45 - Kinematics Part III</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#kinematics-part-iv">46 - Kinematics Part IV</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#weighted-random">47 - Weighted Random</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#matrix-math-part-i">48 - Matrix Math Part I</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#matrix-math-part-ii">49 - Matrix Math Part II</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ifs-fractals">50 - IFS Fractals</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#pseudo-random-number-generators-part-i">51 - Pseudo Random Number Generators Part I</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#pseudo-random-number-generators-part-ii">52 - Pseudo Random Number Generators, Part II</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#random-circle-packing">53 - Random Circle Packing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#dot-product">54 - Dot Product</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#aspect-ratio">55 - Aspect Ratio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#box-layout">56 - Box Layout</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#grid-layout">57 - Grid Layout</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#array-math">58 - Array Math</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../shaders/index.html">Shaders</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../coding_train/index.html">Coding Train Challenge</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../nature_of_code/index.html">The Nature of Code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../games/index.html">Games</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../games/asteroids.html">Asteroids</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../games/bird.html">Bird</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../games/blackjack.html">Blackjack</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../games/blocks.html">Blocks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../games/eyes.html">Eyes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../games/fifteen.html">Fifteen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../games/flowers.html">Flowers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../games/ghoulash.html">Ghoulash</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../games/life.html">Life</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../games/snake.html">Snake</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../games/sokoban.html">Sokoban</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../games/rock_paper_scissors.html">Rock Paper Scissors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../games/hangman.html">Hangman</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../games/poker_dice.html">Poker Dice</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Coding Club</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Coding Math</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/coding_math/index.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="coding-math">
+<h1>Coding Math<a class="headerlink" href="#coding-math" title="Permalink to this heading"></a></h1>
+<section id="introduction">
+<h2>1 - Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading"></a></h2>
+</section>
+<section id="intro-to-trigonometry">
+<h2>2 - Intro to Trigonometry<a class="headerlink" href="#intro-to-trigonometry" title="Permalink to this heading"></a></h2>
+</section>
+<section id="more-trigonometry">
+<h2>3 - More Trigonometry<a class="headerlink" href="#more-trigonometry" title="Permalink to this heading"></a></h2>
+</section>
+<section id="circles-ellipses-and-lissajous-curves">
+<h2>4 - Circles, Ellipses and Lissajous Curves<a class="headerlink" href="#circles-ellipses-and-lissajous-curves" title="Permalink to this heading"></a></h2>
+</section>
+<section id="arctangent">
+<h2>5 - Arctangent<a class="headerlink" href="#arctangent" title="Permalink to this heading"></a></h2>
+</section>
+<section id="vectors-part-i">
+<h2>6 - Vectors, Part I<a class="headerlink" href="#vectors-part-i" title="Permalink to this heading"></a></h2>
+</section>
+<section id="vectors-part-2">
+<h2>7 - Vectors Part 2<a class="headerlink" href="#vectors-part-2" title="Permalink to this heading"></a></h2>
+</section>
+<section id="velocity">
+<h2>8 - Velocity<a class="headerlink" href="#velocity" title="Permalink to this heading"></a></h2>
+</section>
+<section id="acceleration">
+<h2>9 - Acceleration<a class="headerlink" href="#acceleration" title="Permalink to this heading"></a></h2>
+</section>
+<section id="advanced-acceleration">
+<h2>10 - Advanced Acceleration<a class="headerlink" href="#advanced-acceleration" title="Permalink to this heading"></a></h2>
+</section>
+<section id="gravity">
+<h2>11 - Gravity<a class="headerlink" href="#gravity" title="Permalink to this heading"></a></h2>
+</section>
+<section id="edge-handling">
+<h2>12 - Edge Handling<a class="headerlink" href="#edge-handling" title="Permalink to this heading"></a></h2>
+</section>
+<section id="friction">
+<h2>13 - Friction<a class="headerlink" href="#friction" title="Permalink to this heading"></a></h2>
+</section>
+<section id="collision-detection">
+<h2>14 - Collision Detection<a class="headerlink" href="#collision-detection" title="Permalink to this heading"></a></h2>
+</section>
+<section id="springs-part-1">
+<h2>15 - Springs Part 1<a class="headerlink" href="#springs-part-1" title="Permalink to this heading"></a></h2>
+</section>
+<section id="springs-part-2">
+<h2>16 - Springs Part 2<a class="headerlink" href="#springs-part-2" title="Permalink to this heading"></a></h2>
+</section>
+<section id="particles-optimization">
+<h2>17 - Particles - Optimization<a class="headerlink" href="#particles-optimization" title="Permalink to this heading"></a></h2>
+</section>
+<section id="particles-enhancements">
+<h2>18 - Particles - Enhancements<a class="headerlink" href="#particles-enhancements" title="Permalink to this heading"></a></h2>
+</section>
+<section id="bezier-curves">
+<h2>19 - Bezier Curves<a class="headerlink" href="#bezier-curves" title="Permalink to this heading"></a></h2>
+</section>
+<section id="more-on-bezier-curves">
+<h2>20 - More on Bezier Curves<a class="headerlink" href="#more-on-bezier-curves" title="Permalink to this heading"></a></h2>
+</section>
+<section id="bitmap-collision-detection">
+<h2>21 - Bitmap Collision Detection<a class="headerlink" href="#bitmap-collision-detection" title="Permalink to this heading"></a></h2>
+</section>
+<section id="d-postcards-in-space">
+<h2>22 - 3D - Postcards in Space<a class="headerlink" href="#d-postcards-in-space" title="Permalink to this heading"></a></h2>
+</section>
+<section id="d-carousel">
+<h2>23 - 3D Carousel<a class="headerlink" href="#d-carousel" title="Permalink to this heading"></a></h2>
+</section>
+<section id="d-points-and-lines">
+<h2>24: 3D Points and Lines<a class="headerlink" href="#d-points-and-lines" title="Permalink to this heading"></a></h2>
+</section>
+<section id="d-modeling-points-and-lines-part-2">
+<h2>25 - 3D Modeling, Points and Lines Part 2<a class="headerlink" href="#d-modeling-points-and-lines-part-2" title="Permalink to this heading"></a></h2>
+</section>
+<section id="d-and-3d-coordinate-rotation">
+<h2>26 - 2D and 3D Coordinate Rotation<a class="headerlink" href="#d-and-3d-coordinate-rotation" title="Permalink to this heading"></a></h2>
+</section>
+<section id="easing-and-tweening">
+<h2>27 - Easing and Tweening<a class="headerlink" href="#easing-and-tweening" title="Permalink to this heading"></a></h2>
+</section>
+<section id="more-on-easing">
+<h2>28 - More on Easing<a class="headerlink" href="#more-on-easing" title="Permalink to this heading"></a></h2>
+</section>
+<section id="tweening-part-1">
+<h2>29 - Tweening Part 1<a class="headerlink" href="#tweening-part-1" title="Permalink to this heading"></a></h2>
+</section>
+<section id="tweening-part-ii">
+<h2>30 - Tweening Part II<a class="headerlink" href="#tweening-part-ii" title="Permalink to this heading"></a></h2>
+</section>
+<section id="tweening-part-iii">
+<h2>31 - Tweening Part III<a class="headerlink" href="#tweening-part-iii" title="Permalink to this heading"></a></h2>
+</section>
+<section id="line-intersections-part-i">
+<h2>32 - Line Intersections Part I<a class="headerlink" href="#line-intersections-part-i" title="Permalink to this heading"></a></h2>
+</section>
+<section id="line-intersections-part-ii">
+<h2>33 - Line Intersections Part II<a class="headerlink" href="#line-intersections-part-ii" title="Permalink to this heading"></a></h2>
+</section>
+<section id="line-intersections-part-iii">
+<h2>34 - Line Intersections Part III<a class="headerlink" href="#line-intersections-part-iii" title="Permalink to this heading"></a></h2>
+</section>
+<section id="intro-to-fractals">
+<h2>35 - Intro to Fractals<a class="headerlink" href="#intro-to-fractals" title="Permalink to this heading"></a></h2>
+</section>
+<section id="verlet-integration-part-i">
+<h2>36 - Verlet Integration Part I<a class="headerlink" href="#verlet-integration-part-i" title="Permalink to this heading"></a></h2>
+</section>
+<section id="verlet-integration-part-ii">
+<h2>37 - Verlet Integration Part II<a class="headerlink" href="#verlet-integration-part-ii" title="Permalink to this heading"></a></h2>
+</section>
+<section id="verlet-integration-part-iii">
+<h2>38 - Verlet Integration Part III<a class="headerlink" href="#verlet-integration-part-iii" title="Permalink to this heading"></a></h2>
+</section>
+<section id="verlet-integration-part-iv">
+<h2>39 - Verlet Integration Part IV<a class="headerlink" href="#verlet-integration-part-iv" title="Permalink to this heading"></a></h2>
+</section>
+<section id="fractal-trees">
+<h2>40 - Fractal Trees<a class="headerlink" href="#fractal-trees" title="Permalink to this heading"></a></h2>
+</section>
+<section id="isometric-3d-part-i">
+<h2>41 - Isometric 3D Part I<a class="headerlink" href="#isometric-3d-part-i" title="Permalink to this heading"></a></h2>
+</section>
+<section id="isometric-3d-part-ii">
+<h2>42 - Isometric 3D Part II<a class="headerlink" href="#isometric-3d-part-ii" title="Permalink to this heading"></a></h2>
+</section>
+<section id="id1">
+<h2>42 - Isometric 3D Part II<a class="headerlink" href="#id1" title="Permalink to this heading"></a></h2>
+</section>
+<section id="kinematics-part-i">
+<h2>43 - Kinematics Part I<a class="headerlink" href="#kinematics-part-i" title="Permalink to this heading"></a></h2>
+</section>
+<section id="kinematics-part-ii">
+<h2>44 - Kinematics Part II<a class="headerlink" href="#kinematics-part-ii" title="Permalink to this heading"></a></h2>
+</section>
+<section id="kinematics-part-iii">
+<h2>45 - Kinematics Part III<a class="headerlink" href="#kinematics-part-iii" title="Permalink to this heading"></a></h2>
+</section>
+<section id="kinematics-part-iv">
+<h2>46 - Kinematics Part IV<a class="headerlink" href="#kinematics-part-iv" title="Permalink to this heading"></a></h2>
+</section>
+<section id="weighted-random">
+<h2>47 - Weighted Random<a class="headerlink" href="#weighted-random" title="Permalink to this heading"></a></h2>
+</section>
+<section id="matrix-math-part-i">
+<h2>48 - Matrix Math Part I<a class="headerlink" href="#matrix-math-part-i" title="Permalink to this heading"></a></h2>
+</section>
+<section id="matrix-math-part-ii">
+<h2>49 - Matrix Math Part II<a class="headerlink" href="#matrix-math-part-ii" title="Permalink to this heading"></a></h2>
+</section>
+<section id="ifs-fractals">
+<h2>50 - IFS Fractals<a class="headerlink" href="#ifs-fractals" title="Permalink to this heading"></a></h2>
+</section>
+<section id="pseudo-random-number-generators-part-i">
+<h2>51 - Pseudo Random Number Generators Part I<a class="headerlink" href="#pseudo-random-number-generators-part-i" title="Permalink to this heading"></a></h2>
+</section>
+<section id="pseudo-random-number-generators-part-ii">
+<h2>52 - Pseudo Random Number Generators, Part II<a class="headerlink" href="#pseudo-random-number-generators-part-ii" title="Permalink to this heading"></a></h2>
+</section>
+<section id="random-circle-packing">
+<h2>53 - Random Circle Packing<a class="headerlink" href="#random-circle-packing" title="Permalink to this heading"></a></h2>
+</section>
+<section id="dot-product">
+<h2>54 - Dot Product<a class="headerlink" href="#dot-product" title="Permalink to this heading"></a></h2>
+</section>
+<section id="aspect-ratio">
+<h2>55 - Aspect Ratio<a class="headerlink" href="#aspect-ratio" title="Permalink to this heading"></a></h2>
+</section>
+<section id="box-layout">
+<h2>56 - Box Layout<a class="headerlink" href="#box-layout" title="Permalink to this heading"></a></h2>
+</section>
+<section id="grid-layout">
+<h2>57 - Grid Layout<a class="headerlink" href="#grid-layout" title="Permalink to this heading"></a></h2>
+</section>
+<section id="array-math">
+<h2>58 - Array Math<a class="headerlink" href="#array-math" title="Permalink to this heading"></a></h2>
+<p><a class="reference external" href="https://www.youtube.com/watch?v=zm9bqSSiIdo&amp;list=PL7wAPgl1JVvUEb0dIygHzO4698tmcwLk9">https://www.youtube.com/watch?v=zm9bqSSiIdo&amp;list=PL7wAPgl1JVvUEb0dIygHzO4698tmcwLk9</a></p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../cryptography/vigenere.html" class="btn btn-neutral float-left" title="Vigenere Cipher" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../shaders/index.html" class="btn btn-neutral float-right" title="Shaders" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Marcel Hrdina.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

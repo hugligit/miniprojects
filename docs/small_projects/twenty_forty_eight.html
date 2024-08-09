@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Twenty Forty Eight &mdash; Coding Club  documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Vigenere Cipher" href="vigenere_cipher.html" />
+    <link rel="prev" title="Trick Questions" href="trick_questions.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            Coding Club
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">The Big Book of Small Python Projects</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="bagels.html">Bagels</a></li>
+<li class="toctree-l2"><a class="reference internal" href="birthday_paradox.html">Birthday Paradox</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bitmap_message.html">Bitmap Message</a></li>
+<li class="toctree-l2"><a class="reference internal" href="blackjack.html">Blackjack</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bouncing_dvd_logo.html">Bouncing DVD Logo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="caesar_cipher.html">Caesar Cipher</a></li>
+<li class="toctree-l2"><a class="reference internal" href="caesar_hacker.html">Caesar Hacker</a></li>
+<li class="toctree-l2"><a class="reference internal" href="calendar_maker.html">Calendar Maker</a></li>
+<li class="toctree-l2"><a class="reference internal" href="carrot_in_a_box.html">Carrot in a Box</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cho_han.html">CHO HAN</a></li>
+<li class="toctree-l2"><a class="reference internal" href="clickbait_headline_generator.html">Clickbait Headline Generator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="collatz_sequence.html">Collatz Sequence</a></li>
+<li class="toctree-l2"><a class="reference internal" href="conways_game_of_life.html">Conways Game of Life</a></li>
+<li class="toctree-l2"><a class="reference internal" href="countdown.html">Countdown</a></li>
+<li class="toctree-l2"><a class="reference internal" href="deep_cave.html">Deep Cave</a></li>
+<li class="toctree-l2"><a class="reference internal" href="diamonds.html">Diamonds</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dice_math.html">Dice Math</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dice_roller.html">Dice Roller</a></li>
+<li class="toctree-l2"><a class="reference internal" href="digital_clock.html">Digital Clock</a></li>
+<li class="toctree-l2"><a class="reference internal" href="digital_stream.html">Digital Stream</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dna_visualization.html">DNA Visualization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ducklings.html">Ducklings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="etching_drawer.html">Etching Drawer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="factor_finder.html">Factor Finder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="fast_draw.html">Fast Draw</a></li>
+<li class="toctree-l2"><a class="reference internal" href="fibonacci.html">Fibonacci</a></li>
+<li class="toctree-l2"><a class="reference internal" href="fish_tank.html">Fish Tank</a></li>
+<li class="toctree-l2"><a class="reference internal" href="flooder.html">Flooder</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="flooder.html#how-it-works">How It Works</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="forest_fire_sim.html">Forest Fire Sim</a></li>
+<li class="toctree-l2"><a class="reference internal" href="four_in_a_row.html">Four in a Row</a></li>
+<li class="toctree-l2"><a class="reference internal" href="guess_the_number.html">Guess the Number</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gullible.html">Gullible</a></li>
+<li class="toctree-l2"><a class="reference internal" href="hacking_minigame.html">Hacking Minigame</a></li>
+<li class="toctree-l2"><a class="reference internal" href="hangman_and_guillotine.html">Hangman and Guillotine</a></li>
+<li class="toctree-l2"><a class="reference internal" href="hex_grid.html">HEX Grid</a></li>
+<li class="toctree-l2"><a class="reference internal" href="hourglass.html">Hourglass</a></li>
+<li class="toctree-l2"><a class="reference internal" href="hungry_robots.html">Hungry Robots</a></li>
+<li class="toctree-l2"><a class="reference internal" href="jaccuse.html">J’accuse</a></li>
+<li class="toctree-l2"><a class="reference internal" href="langtons_ant.html">Langtons Ant</a></li>
+<li class="toctree-l2"><a class="reference internal" href="leetspeak.html">L3375P34]&lt;</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lucky_stars.html">Lucky Stars</a></li>
+<li class="toctree-l2"><a class="reference internal" href="magic_fortune_ball.html">Magic Fortune Ball</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mancala.html">Mancala</a></li>
+<li class="toctree-l2"><a class="reference internal" href="maze_runner_2d.html">Maze Runner 2D</a></li>
+<li class="toctree-l2"><a class="reference internal" href="maze_runner_3d.html">Maze Runner 3D</a></li>
+<li class="toctree-l2"><a class="reference internal" href="million_dice_statistics.html">Million Dice Statistics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mondrian_art_generator.html">Mondrian Art Generator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="monty_hall.html">Monty Hall</a></li>
+<li class="toctree-l2"><a class="reference internal" href="multiplication_table.html">Multiplication Table</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ninety_nine_bottles.html">Ninety Nine Bottles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ninety_nniine_boottels.html">Ninety Nniine Boottels</a></li>
+<li class="toctree-l2"><a class="reference internal" href="numeral_systems.html">Numeral Systems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="periodic_table_of_the_elements.html">Periodic Table of the Elements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pig_latin.html">Pig Latin</a></li>
+<li class="toctree-l2"><a class="reference internal" href="powerball_lottery.html">Powerball Lottery</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prime_numbers.html">Prime Numbers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="progress_bar.html">Progress Bar</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rainbow.html">Rainbow</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rock_paper_scissors.html">Rock Paper Scissors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rock_paper_scissors_always-win_version.html">Rock Paper Scissors (Always Win Version)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rot13_cipher.html">ROT13 Cipher</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rotating_cube.html">Rotating Cube</a></li>
+<li class="toctree-l2"><a class="reference internal" href="royal_game_of_ur.html">Royal Game of Ur</a></li>
+<li class="toctree-l2"><a class="reference internal" href="seven-segment_display_module.html">Seven Segment Display Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="shining_carpet.html">Shining Carpet</a></li>
+<li class="toctree-l2"><a class="reference internal" href="simple_substitution_cipher.html">Simple Substitution Cipher</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sine_message.html">Sine Message</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sliding_tile_puzzle.html">Sliding Tile Puzzle</a></li>
+<li class="toctree-l2"><a class="reference internal" href="snail_race.html">Snail Race</a></li>
+<li class="toctree-l2"><a class="reference internal" href="soroban_japanese_abacus.html">Soroban Japanese Abacus</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sound_mimic.html">Sound Mimic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="spongecase.html">Spongecase</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sudoku_puzzle.html">Sudoku Puzzle</a></li>
+<li class="toctree-l2"><a class="reference internal" href="text_to_speech_talker.html">Text to Speech Talker</a></li>
+<li class="toctree-l2"><a class="reference internal" href="three-card_monte.html">Three Card Monte</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tic-tac-toe.html">Tic-Tac-Toe</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tower_of_hanoi.html">Tower of Hanoi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="trick_questions.html">Trick Questions</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Twenty Forty Eight</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vigenere_cipher.html">Vigenere Cipher</a></li>
+<li class="toctree-l2"><a class="reference internal" href="water_bucket_puzzle.html">Water Bucket Puzzle</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../cryptography/index.html">Cracking Codes with Python</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../cryptography/reverse.html">Reverse Cipher</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cryptography/caesar.html">Caesar Cipher</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cryptography/transposition.html">Transposition Cipher</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cryptography/affine.html">Affine Cipher</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cryptography/simple_substitution.html">Simple Substitution Cipher</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cryptography/vigenere.html">Vigenere Cipher</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../coding_math/index.html">Coding Math</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#introduction">1 - Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#intro-to-trigonometry">2 - Intro to Trigonometry</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#more-trigonometry">3 - More Trigonometry</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#circles-ellipses-and-lissajous-curves">4 - Circles, Ellipses and Lissajous Curves</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#arctangent">5 - Arctangent</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#vectors-part-i">6 - Vectors, Part I</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#vectors-part-2">7 - Vectors Part 2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#velocity">8 - Velocity</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#acceleration">9 - Acceleration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#advanced-acceleration">10 - Advanced Acceleration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#gravity">11 - Gravity</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#edge-handling">12 - Edge Handling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#friction">13 - Friction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#collision-detection">14 - Collision Detection</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#springs-part-1">15 - Springs Part 1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#springs-part-2">16 - Springs Part 2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#particles-optimization">17 - Particles - Optimization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#particles-enhancements">18 - Particles - Enhancements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#bezier-curves">19 - Bezier Curves</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#more-on-bezier-curves">20 - More on Bezier Curves</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#bitmap-collision-detection">21 - Bitmap Collision Detection</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#d-postcards-in-space">22 - 3D - Postcards in Space</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#d-carousel">23 - 3D Carousel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#d-points-and-lines">24: 3D Points and Lines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#d-modeling-points-and-lines-part-2">25 - 3D Modeling, Points and Lines Part 2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#d-and-3d-coordinate-rotation">26 - 2D and 3D Coordinate Rotation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#easing-and-tweening">27 - Easing and Tweening</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#more-on-easing">28 - More on Easing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#tweening-part-1">29 - Tweening Part 1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#tweening-part-ii">30 - Tweening Part II</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#tweening-part-iii">31 - Tweening Part III</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#line-intersections-part-i">32 - Line Intersections Part I</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#line-intersections-part-ii">33 - Line Intersections Part II</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#line-intersections-part-iii">34 - Line Intersections Part III</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#intro-to-fractals">35 - Intro to Fractals</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#verlet-integration-part-i">36 - Verlet Integration Part I</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#verlet-integration-part-ii">37 - Verlet Integration Part II</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#verlet-integration-part-iii">38 - Verlet Integration Part III</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#verlet-integration-part-iv">39 - Verlet Integration Part IV</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#fractal-trees">40 - Fractal Trees</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#isometric-3d-part-i">41 - Isometric 3D Part I</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#isometric-3d-part-ii">42 - Isometric 3D Part II</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#id1">42 - Isometric 3D Part II</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#kinematics-part-i">43 - Kinematics Part I</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#kinematics-part-ii">44 - Kinematics Part II</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#kinematics-part-iii">45 - Kinematics Part III</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#kinematics-part-iv">46 - Kinematics Part IV</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#weighted-random">47 - Weighted Random</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#matrix-math-part-i">48 - Matrix Math Part I</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#matrix-math-part-ii">49 - Matrix Math Part II</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#ifs-fractals">50 - IFS Fractals</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#pseudo-random-number-generators-part-i">51 - Pseudo Random Number Generators Part I</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#pseudo-random-number-generators-part-ii">52 - Pseudo Random Number Generators, Part II</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#random-circle-packing">53 - Random Circle Packing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#dot-product">54 - Dot Product</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#aspect-ratio">55 - Aspect Ratio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#box-layout">56 - Box Layout</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#grid-layout">57 - Grid Layout</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#array-math">58 - Array Math</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../shaders/index.html">Shaders</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../coding_train/index.html">Coding Train Challenge</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../nature_of_code/index.html">The Nature of Code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../games/index.html">Games</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../games/asteroids.html">Asteroids</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../games/bird.html">Bird</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../games/blackjack.html">Blackjack</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../games/blocks.html">Blocks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../games/eyes.html">Eyes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../games/fifteen.html">Fifteen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../games/flowers.html">Flowers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../games/ghoulash.html">Ghoulash</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../games/life.html">Life</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../games/snake.html">Snake</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../games/sokoban.html">Sokoban</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../games/rock_paper_scissors.html">Rock Paper Scissors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../games/hangman.html">Hangman</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../games/poker_dice.html">Poker Dice</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Coding Club</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">The Big Book of Small Python Projects</a></li>
+      <li class="breadcrumb-item active">Twenty Forty Eight</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/small_projects/twenty_forty_eight.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="twenty-forty-eight">
+<h1>Twenty Forty Eight<a class="headerlink" href="#twenty-forty-eight" title="Permalink to this heading"></a></h1>
+<p class="tags"><span>Tags: </span><a class="reference external" href="../_tags/large.html">large</a><span>, </span><a class="reference external" href="../_tags/game.html">game</a><span>, </span><a class="reference external" href="../_tags/puzzle.html">puzzle</a></p>
+<p>Gabriele Cirulli, a web developer, invented the game 2048 in one weekend. It
+was inspired by Veewo Studios’ 1024 game, which in turn was inspired by
+Threes!, a game by the development team Sirvo. In 2048, you must merge numbers
+on a 4 × 4 board to clear them from the screen. Two 2s merge into a 4, two 4s
+merge into an 8, and so on. The game adds a new 2 to the board on each merging.
+The objective is to reach 2048 before the entire board fills up.</p>
+<details class="summary-twenty-forty-eight-py">
+<summary>twenty_forty_eight.py</summary><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos">  1</span><span class="sd">&quot;&quot;&quot;Twenty Forty-Eight, by Al Sweigart al@inventwithpython.com</span>
+<span class="linenos">  2</span><span class="sd">A sliding tile game to combine exponentially-increasing numbers.</span>
+<span class="linenos">  3</span><span class="sd">Inspired by Gabriele Cirulli&#39;s 2048, which is a clone of Veewo Studios&#39;</span>
+<span class="linenos">  4</span><span class="sd">1024, which in turn is a clone of the Threes! game.</span>
+<span class="linenos">  5</span><span class="sd">More info at https://en.wikipedia.org/wiki/2048_(video_game)</span>
+<span class="linenos">  6</span><span class="sd">This code is available at https://nostarch.com/big-book-small-python-programming</span>
+<span class="linenos">  7</span><span class="sd">Tags: large, game, puzzle&quot;&quot;&quot;</span>
+<span class="linenos">  8</span>
+<span class="linenos">  9</span><span class="kn">import</span> <span class="nn">random</span><span class="o">,</span> <span class="nn">sys</span>
+<span class="linenos"> 10</span>
+<span class="linenos"> 11</span><span class="c1"># Set up the constants:</span>
+<span class="linenos"> 12</span><span class="n">BLANK</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>  <span class="c1"># A value that represents a blank space on the board.</span>
+<span class="linenos"> 13</span>
+<span class="linenos"> 14</span>
+<span class="linenos"> 15</span><span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+<span class="linenos"> 16</span>    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;&#39;&#39;Twenty Forty-Eight, by Al Sweigart al@inventwithpython.com</span>
+<span class="linenos"> 17</span>
+<span class="linenos"> 18</span><span class="s1">Slide all the tiles on the board in one of four directions. Tiles with</span>
+<span class="linenos"> 19</span><span class="s1">like numbers will combine into larger-numbered tiles. A new 2 tile is</span>
+<span class="linenos"> 20</span><span class="s1">added to the board on each move. You win if you can create a 2048 tile.</span>
+<span class="linenos"> 21</span><span class="s1">You lose if the board fills up the tiles before then.&#39;&#39;&#39;</span><span class="p">)</span>
+<span class="linenos"> 22</span>    <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;Press Enter to begin...&#39;</span><span class="p">)</span>
+<span class="linenos"> 23</span>
+<span class="linenos"> 24</span>    <span class="n">gameBoard</span> <span class="o">=</span> <span class="n">getNewBoard</span><span class="p">()</span>
+<span class="linenos"> 25</span>
+<span class="linenos"> 26</span>    <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>  <span class="c1"># Main game loop.</span>
+<span class="linenos"> 27</span>        <span class="n">drawBoard</span><span class="p">(</span><span class="n">gameBoard</span><span class="p">)</span>
+<span class="linenos"> 28</span>        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Score:&#39;</span><span class="p">,</span> <span class="n">getScore</span><span class="p">(</span><span class="n">gameBoard</span><span class="p">))</span>
+<span class="linenos"> 29</span>        <span class="n">playerMove</span> <span class="o">=</span> <span class="n">askForPlayerMove</span><span class="p">()</span>
+<span class="linenos"> 30</span>        <span class="n">gameBoard</span> <span class="o">=</span> <span class="n">makeMove</span><span class="p">(</span><span class="n">gameBoard</span><span class="p">,</span> <span class="n">playerMove</span><span class="p">)</span>
+<span class="linenos"> 31</span>        <span class="n">addTwoToBoard</span><span class="p">(</span><span class="n">gameBoard</span><span class="p">)</span>
+<span class="linenos"> 32</span>
+<span class="linenos"> 33</span>        <span class="k">if</span> <span class="n">isFull</span><span class="p">(</span><span class="n">gameBoard</span><span class="p">):</span>
+<span class="linenos"> 34</span>            <span class="n">drawBoard</span><span class="p">(</span><span class="n">gameBoard</span><span class="p">)</span>
+<span class="linenos"> 35</span>            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Game Over - Thanks for playing!&#39;</span><span class="p">)</span>
+<span class="linenos"> 36</span>            <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">()</span>
+<span class="linenos"> 37</span>
+<span class="linenos"> 38</span>
+<span class="linenos"> 39</span><span class="k">def</span> <span class="nf">getNewBoard</span><span class="p">():</span>
+<span class="linenos"> 40</span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Returns a new data structure that represents a board.</span>
+<span class="linenos"> 41</span>
+<span class="linenos"> 42</span><span class="sd">    It&#39;s a dictionary with keys of (x, y) tuples and values of the tile</span>
+<span class="linenos"> 43</span><span class="sd">    at that space. The tile is either a power-of-two integer or BLANK.</span>
+<span class="linenos"> 44</span><span class="sd">    The coordinates are laid out as:</span>
+<span class="linenos"> 45</span><span class="sd">       X0 1 2 3</span>
+<span class="linenos"> 46</span><span class="sd">      Y+-+-+-+-+</span>
+<span class="linenos"> 47</span><span class="sd">      0| | | | |</span>
+<span class="linenos"> 48</span><span class="sd">       +-+-+-+-+</span>
+<span class="linenos"> 49</span><span class="sd">      1| | | | |</span>
+<span class="linenos"> 50</span><span class="sd">       +-+-+-+-+</span>
+<span class="linenos"> 51</span><span class="sd">      2| | | | |</span>
+<span class="linenos"> 52</span><span class="sd">       +-+-+-+-+</span>
+<span class="linenos"> 53</span><span class="sd">      3| | | | |</span>
+<span class="linenos"> 54</span><span class="sd">       +-+-+-+-+&quot;&quot;&quot;</span>
+<span class="linenos"> 55</span>
+<span class="linenos"> 56</span>    <span class="n">newBoard</span> <span class="o">=</span> <span class="p">{}</span>  <span class="c1"># Contains the board data structure to be returned.</span>
+<span class="linenos"> 57</span>    <span class="c1"># Loop over every possible space and set all the tiles to blank:</span>
+<span class="linenos"> 58</span>    <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">):</span>
+<span class="linenos"> 59</span>        <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">):</span>
+<span class="linenos"> 60</span>            <span class="n">newBoard</span><span class="p">[(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)]</span> <span class="o">=</span> <span class="n">BLANK</span>
+<span class="linenos"> 61</span>
+<span class="linenos"> 62</span>    <span class="c1"># Pick two random spaces for the two starting 2&#39;s:</span>
+<span class="linenos"> 63</span>    <span class="n">startingTwosPlaced</span> <span class="o">=</span> <span class="mi">0</span>  <span class="c1"># The number of starting spaces picked.</span>
+<span class="linenos"> 64</span>    <span class="k">while</span> <span class="n">startingTwosPlaced</span> <span class="o">&lt;</span> <span class="mi">2</span><span class="p">:</span>  <span class="c1"># Repeat for duplicate spaces.</span>
+<span class="linenos"> 65</span>        <span class="n">randomSpace</span> <span class="o">=</span> <span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
+<span class="linenos"> 66</span>        <span class="c1"># Make sure the randomly selected space isn&#39;t already taken:</span>
+<span class="linenos"> 67</span>        <span class="k">if</span> <span class="n">newBoard</span><span class="p">[</span><span class="n">randomSpace</span><span class="p">]</span> <span class="o">==</span> <span class="n">BLANK</span><span class="p">:</span>
+<span class="linenos"> 68</span>            <span class="n">newBoard</span><span class="p">[</span><span class="n">randomSpace</span><span class="p">]</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="linenos"> 69</span>            <span class="n">startingTwosPlaced</span> <span class="o">=</span> <span class="n">startingTwosPlaced</span> <span class="o">+</span> <span class="mi">1</span>
+<span class="linenos"> 70</span>
+<span class="linenos"> 71</span>    <span class="k">return</span> <span class="n">newBoard</span>
+<span class="linenos"> 72</span>
+<span class="linenos"> 73</span>
+<span class="linenos"> 74</span><span class="k">def</span> <span class="nf">drawBoard</span><span class="p">(</span><span class="n">board</span><span class="p">):</span>
+<span class="linenos"> 75</span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Draws the board data structure on the screen.&quot;&quot;&quot;</span>
+<span class="linenos"> 76</span>
+<span class="linenos"> 77</span>    <span class="c1"># Go through each possible space left to right, top to bottom, and</span>
+<span class="linenos"> 78</span>    <span class="c1"># create a list of what each space&#39;s label should be.</span>
+<span class="linenos"> 79</span>    <span class="n">labels</span> <span class="o">=</span> <span class="p">[]</span>  <span class="c1"># A list of strings for the number/blank for that tile.</span>
+<span class="linenos"> 80</span>    <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">):</span>
+<span class="linenos"> 81</span>        <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">):</span>
+<span class="linenos"> 82</span>            <span class="n">tile</span> <span class="o">=</span> <span class="n">board</span><span class="p">[(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)]</span>  <span class="c1"># Get the tile at this space.</span>
+<span class="linenos"> 83</span>            <span class="c1"># Make sure the label is 5 spaces long:</span>
+<span class="linenos"> 84</span>            <span class="n">labelForThisTile</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">tile</span><span class="p">)</span><span class="o">.</span><span class="n">center</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<span class="linenos"> 85</span>            <span class="n">labels</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">labelForThisTile</span><span class="p">)</span>
+<span class="linenos"> 86</span>
+<span class="linenos"> 87</span>    <span class="c1"># The {} are replaced with the label for that tile:</span>
+<span class="linenos"> 88</span>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;</span>
+<span class="linenos"> 89</span><span class="s2">+-----+-----+-----+-----+</span>
+<span class="linenos"> 90</span><span class="s2">|     |     |     |     |</span>
+<span class="linenos"> 91</span><span class="s2">|</span><span class="si">{}</span><span class="s2">|</span><span class="si">{}</span><span class="s2">|</span><span class="si">{}</span><span class="s2">|</span><span class="si">{}</span><span class="s2">|</span>
+<span class="linenos"> 92</span><span class="s2">|     |     |     |     |</span>
+<span class="linenos"> 93</span><span class="s2">+-----+-----+-----+-----+</span>
+<span class="linenos"> 94</span><span class="s2">|     |     |     |     |</span>
+<span class="linenos"> 95</span><span class="s2">|</span><span class="si">{}</span><span class="s2">|</span><span class="si">{}</span><span class="s2">|</span><span class="si">{}</span><span class="s2">|</span><span class="si">{}</span><span class="s2">|</span>
+<span class="linenos"> 96</span><span class="s2">|     |     |     |     |</span>
+<span class="linenos"> 97</span><span class="s2">+-----+-----+-----+-----+</span>
+<span class="linenos"> 98</span><span class="s2">|     |     |     |     |</span>
+<span class="linenos"> 99</span><span class="s2">|</span><span class="si">{}</span><span class="s2">|</span><span class="si">{}</span><span class="s2">|</span><span class="si">{}</span><span class="s2">|</span><span class="si">{}</span><span class="s2">|</span>
+<span class="linenos">100</span><span class="s2">|     |     |     |     |</span>
+<span class="linenos">101</span><span class="s2">+-----+-----+-----+-----+</span>
+<span class="linenos">102</span><span class="s2">|     |     |     |     |</span>
+<span class="linenos">103</span><span class="s2">|</span><span class="si">{}</span><span class="s2">|</span><span class="si">{}</span><span class="s2">|</span><span class="si">{}</span><span class="s2">|</span><span class="si">{}</span><span class="s2">|</span>
+<span class="linenos">104</span><span class="s2">|     |     |     |     |</span>
+<span class="linenos">105</span><span class="s2">+-----+-----+-----+-----+</span>
+<span class="linenos">106</span><span class="s2">&quot;&quot;&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="o">*</span><span class="n">labels</span><span class="p">))</span>
+<span class="linenos">107</span>
+<span class="linenos">108</span>
+<span class="linenos">109</span><span class="k">def</span> <span class="nf">getScore</span><span class="p">(</span><span class="n">board</span><span class="p">):</span>
+<span class="linenos">110</span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Returns the sum of all the tiles on the board data structure.&quot;&quot;&quot;</span>
+<span class="linenos">111</span>    <span class="n">score</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="linenos">112</span>    <span class="c1"># Loop over every space and add the tile to the score:</span>
+<span class="linenos">113</span>    <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">):</span>
+<span class="linenos">114</span>        <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">):</span>
+<span class="linenos">115</span>            <span class="c1"># Only add non-blank tiles to the score:</span>
+<span class="linenos">116</span>            <span class="k">if</span> <span class="n">board</span><span class="p">[(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)]</span> <span class="o">!=</span> <span class="n">BLANK</span><span class="p">:</span>
+<span class="linenos">117</span>                <span class="n">score</span> <span class="o">=</span> <span class="n">score</span> <span class="o">+</span> <span class="n">board</span><span class="p">[(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)]</span>
+<span class="linenos">118</span>    <span class="k">return</span> <span class="n">score</span>
+<span class="linenos">119</span>
+<span class="linenos">120</span>
+<span class="linenos">121</span><span class="k">def</span> <span class="nf">combineTilesInColumn</span><span class="p">(</span><span class="n">column</span><span class="p">):</span>
+<span class="linenos">122</span><span class="w">    </span><span class="sd">&quot;&quot;&quot;The column is a list of four tile. Index 0 is the &quot;bottom&quot; of</span>
+<span class="linenos">123</span><span class="sd">    the column, and tiles are pulled &quot;down&quot; and combine if they are the</span>
+<span class="linenos">124</span><span class="sd">    same. For example, combineTilesInColumn([2, BLANK, 2, BLANK])</span>
+<span class="linenos">125</span><span class="sd">    returns [4, BLANK, BLANK, BLANK].&quot;&quot;&quot;</span>
+<span class="linenos">126</span>
+<span class="linenos">127</span>    <span class="c1"># Copy only the numbers (not blanks) from column to combinedTiles</span>
+<span class="linenos">128</span>    <span class="n">combinedTiles</span> <span class="o">=</span> <span class="p">[]</span>  <span class="c1"># A list of the non-blank tiles in column.</span>
+<span class="linenos">129</span>    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">):</span>
+<span class="linenos">130</span>        <span class="k">if</span> <span class="n">column</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">!=</span> <span class="n">BLANK</span><span class="p">:</span>
+<span class="linenos">131</span>            <span class="n">combinedTiles</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">column</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+<span class="linenos">132</span>
+<span class="linenos">133</span>    <span class="c1"># Keep adding blanks until there are 4 tiles:</span>
+<span class="linenos">134</span>    <span class="k">while</span> <span class="nb">len</span><span class="p">(</span><span class="n">combinedTiles</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">4</span><span class="p">:</span>
+<span class="linenos">135</span>        <span class="n">combinedTiles</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">BLANK</span><span class="p">)</span>
+<span class="linenos">136</span>
+<span class="linenos">137</span>    <span class="c1"># Combine numbers if the one &quot;above&quot; it is the same, and double it.</span>
+<span class="linenos">138</span>    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>  <span class="c1"># Skip index 3: it&#39;s the topmost space.</span>
+<span class="linenos">139</span>        <span class="k">if</span> <span class="n">combinedTiles</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="n">combinedTiles</span><span class="p">[</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]:</span>
+<span class="linenos">140</span>            <span class="n">combinedTiles</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">*=</span> <span class="mi">2</span>  <span class="c1"># Double the number in the tile.</span>
+<span class="linenos">141</span>            <span class="c1"># Move the tiles above it down one space:</span>
+<span class="linenos">142</span>            <span class="k">for</span> <span class="n">aboveIndex</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">):</span>
+<span class="linenos">143</span>                <span class="n">combinedTiles</span><span class="p">[</span><span class="n">aboveIndex</span><span class="p">]</span> <span class="o">=</span> <span class="n">combinedTiles</span><span class="p">[</span><span class="n">aboveIndex</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span>
+<span class="linenos">144</span>            <span class="n">combinedTiles</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">=</span> <span class="n">BLANK</span>  <span class="c1"># Topmost space is always BLANK.</span>
+<span class="linenos">145</span>    <span class="k">return</span> <span class="n">combinedTiles</span>
+<span class="linenos">146</span>
+<span class="linenos">147</span>
+<span class="linenos">148</span><span class="k">def</span> <span class="nf">makeMove</span><span class="p">(</span><span class="n">board</span><span class="p">,</span> <span class="n">move</span><span class="p">):</span>
+<span class="linenos">149</span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Carries out the move on the board.</span>
+<span class="linenos">150</span>
+<span class="linenos">151</span><span class="sd">    The move argument is either &#39;W&#39;, &#39;A&#39;, &#39;S&#39;, or &#39;D&#39; and the function</span>
+<span class="linenos">152</span><span class="sd">    returns the resulting board data structure.&quot;&quot;&quot;</span>
+<span class="linenos">153</span>
+<span class="linenos">154</span>    <span class="c1"># The board is split up into four columns, which are different</span>
+<span class="linenos">155</span>    <span class="c1"># depending on the direction of the move:</span>
+<span class="linenos">156</span>    <span class="k">if</span> <span class="n">move</span> <span class="o">==</span> <span class="s1">&#39;W&#39;</span><span class="p">:</span>
+<span class="linenos">157</span>        <span class="n">allColumnsSpaces</span> <span class="o">=</span> <span class="p">[[(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">3</span><span class="p">)],</span>
+<span class="linenos">158</span>                            <span class="p">[(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">)],</span>
+<span class="linenos">159</span>                            <span class="p">[(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)],</span>
+<span class="linenos">160</span>                            <span class="p">[(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">)]]</span>
+<span class="linenos">161</span>    <span class="k">elif</span> <span class="n">move</span> <span class="o">==</span> <span class="s1">&#39;A&#39;</span><span class="p">:</span>
+<span class="linenos">162</span>        <span class="n">allColumnsSpaces</span> <span class="o">=</span> <span class="p">[[(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">0</span><span class="p">)],</span>
+<span class="linenos">163</span>                            <span class="p">[(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">)],</span>
+<span class="linenos">164</span>                            <span class="p">[(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">)],</span>
+<span class="linenos">165</span>                            <span class="p">[(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">)]]</span>
+<span class="linenos">166</span>    <span class="k">elif</span> <span class="n">move</span> <span class="o">==</span> <span class="s1">&#39;S&#39;</span><span class="p">:</span>
+<span class="linenos">167</span>        <span class="n">allColumnsSpaces</span> <span class="o">=</span> <span class="p">[[(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)],</span>
+<span class="linenos">168</span>                            <span class="p">[(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">)],</span>
+<span class="linenos">169</span>                            <span class="p">[(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">)],</span>
+<span class="linenos">170</span>                            <span class="p">[(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">0</span><span class="p">)]]</span>
+<span class="linenos">171</span>    <span class="k">elif</span> <span class="n">move</span> <span class="o">==</span> <span class="s1">&#39;D&#39;</span><span class="p">:</span>
+<span class="linenos">172</span>        <span class="n">allColumnsSpaces</span> <span class="o">=</span> <span class="p">[[(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)],</span>
+<span class="linenos">173</span>                            <span class="p">[(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">)],</span>
+<span class="linenos">174</span>                            <span class="p">[(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">)],</span>
+<span class="linenos">175</span>                            <span class="p">[(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">3</span><span class="p">)]]</span>
+<span class="linenos">176</span>
+<span class="linenos">177</span>    <span class="c1"># The board data structure after making the move:</span>
+<span class="linenos">178</span>    <span class="n">boardAfterMove</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="linenos">179</span>    <span class="k">for</span> <span class="n">columnSpaces</span> <span class="ow">in</span> <span class="n">allColumnsSpaces</span><span class="p">:</span>  <span class="c1"># Loop over all 4 columns.</span>
+<span class="linenos">180</span>        <span class="c1"># Get the tiles of this column (The first tile is the &quot;bottom&quot;</span>
+<span class="linenos">181</span>        <span class="c1"># of the column):</span>
+<span class="linenos">182</span>        <span class="n">firstTileSpace</span> <span class="o">=</span> <span class="n">columnSpaces</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="linenos">183</span>        <span class="n">secondTileSpace</span> <span class="o">=</span> <span class="n">columnSpaces</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+<span class="linenos">184</span>        <span class="n">thirdTileSpace</span> <span class="o">=</span> <span class="n">columnSpaces</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+<span class="linenos">185</span>        <span class="n">fourthTileSpace</span> <span class="o">=</span> <span class="n">columnSpaces</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span>
+<span class="linenos">186</span>
+<span class="linenos">187</span>        <span class="n">firstTile</span> <span class="o">=</span> <span class="n">board</span><span class="p">[</span><span class="n">firstTileSpace</span><span class="p">]</span>
+<span class="linenos">188</span>        <span class="n">secondTile</span> <span class="o">=</span> <span class="n">board</span><span class="p">[</span><span class="n">secondTileSpace</span><span class="p">]</span>
+<span class="linenos">189</span>        <span class="n">thirdTile</span> <span class="o">=</span> <span class="n">board</span><span class="p">[</span><span class="n">thirdTileSpace</span><span class="p">]</span>
+<span class="linenos">190</span>        <span class="n">fourthTile</span> <span class="o">=</span> <span class="n">board</span><span class="p">[</span><span class="n">fourthTileSpace</span><span class="p">]</span>
+<span class="linenos">191</span>
+<span class="linenos">192</span>        <span class="c1"># Form the column and combine the tiles in it:</span>
+<span class="linenos">193</span>        <span class="n">column</span> <span class="o">=</span> <span class="p">[</span><span class="n">firstTile</span><span class="p">,</span> <span class="n">secondTile</span><span class="p">,</span> <span class="n">thirdTile</span><span class="p">,</span> <span class="n">fourthTile</span><span class="p">]</span>
+<span class="linenos">194</span>        <span class="n">combinedTilesColumn</span> <span class="o">=</span> <span class="n">combineTilesInColumn</span><span class="p">(</span><span class="n">column</span><span class="p">)</span>
+<span class="linenos">195</span>
+<span class="linenos">196</span>        <span class="c1"># Set up the new board data structure with the combined tiles:</span>
+<span class="linenos">197</span>        <span class="n">boardAfterMove</span><span class="p">[</span><span class="n">firstTileSpace</span><span class="p">]</span> <span class="o">=</span> <span class="n">combinedTilesColumn</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="linenos">198</span>        <span class="n">boardAfterMove</span><span class="p">[</span><span class="n">secondTileSpace</span><span class="p">]</span> <span class="o">=</span> <span class="n">combinedTilesColumn</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+<span class="linenos">199</span>        <span class="n">boardAfterMove</span><span class="p">[</span><span class="n">thirdTileSpace</span><span class="p">]</span> <span class="o">=</span> <span class="n">combinedTilesColumn</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+<span class="linenos">200</span>        <span class="n">boardAfterMove</span><span class="p">[</span><span class="n">fourthTileSpace</span><span class="p">]</span> <span class="o">=</span> <span class="n">combinedTilesColumn</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span>
+<span class="linenos">201</span>
+<span class="linenos">202</span>    <span class="k">return</span> <span class="n">boardAfterMove</span>
+<span class="linenos">203</span>
+<span class="linenos">204</span>
+<span class="linenos">205</span><span class="k">def</span> <span class="nf">askForPlayerMove</span><span class="p">():</span>
+<span class="linenos">206</span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Asks the player for the direction of their next move (or quit).</span>
+<span class="linenos">207</span>
+<span class="linenos">208</span><span class="sd">    Ensures they enter a valid move: either &#39;W&#39;, &#39;A&#39;, &#39;S&#39; or &#39;D&#39;.&quot;&quot;&quot;</span>
+<span class="linenos">209</span>    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Enter move: (WASD or Q to quit)&#39;</span><span class="p">)</span>
+<span class="linenos">210</span>    <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>  <span class="c1"># Keep looping until they enter a valid move.</span>
+<span class="linenos">211</span>        <span class="n">move</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;&gt; &#39;</span><span class="p">)</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>
+<span class="linenos">212</span>        <span class="k">if</span> <span class="n">move</span> <span class="o">==</span> <span class="s1">&#39;Q&#39;</span><span class="p">:</span>
+<span class="linenos">213</span>            <span class="c1"># End the program:</span>
+<span class="linenos">214</span>            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Thanks for playing!&#39;</span><span class="p">)</span>
+<span class="linenos">215</span>            <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">()</span>
+<span class="linenos">216</span>
+<span class="linenos">217</span>        <span class="c1"># Either return the valid move, or loop back and ask again:</span>
+<span class="linenos">218</span>        <span class="k">if</span> <span class="n">move</span> <span class="ow">in</span> <span class="p">(</span><span class="s1">&#39;W&#39;</span><span class="p">,</span> <span class="s1">&#39;A&#39;</span><span class="p">,</span> <span class="s1">&#39;S&#39;</span><span class="p">,</span> <span class="s1">&#39;D&#39;</span><span class="p">):</span>
+<span class="linenos">219</span>            <span class="k">return</span> <span class="n">move</span>
+<span class="linenos">220</span>        <span class="k">else</span><span class="p">:</span>
+<span class="linenos">221</span>            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Enter one of &quot;W&quot;, &quot;A&quot;, &quot;S&quot;, &quot;D&quot;, or &quot;Q&quot;.&#39;</span><span class="p">)</span>
+<span class="linenos">222</span>
+<span class="linenos">223</span>
+<span class="linenos">224</span><span class="k">def</span> <span class="nf">addTwoToBoard</span><span class="p">(</span><span class="n">board</span><span class="p">):</span>
+<span class="linenos">225</span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Adds a new 2 tile randomly to the board.&quot;&quot;&quot;</span>
+<span class="linenos">226</span>    <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+<span class="linenos">227</span>        <span class="n">randomSpace</span> <span class="o">=</span> <span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
+<span class="linenos">228</span>        <span class="k">if</span> <span class="n">board</span><span class="p">[</span><span class="n">randomSpace</span><span class="p">]</span> <span class="o">==</span> <span class="n">BLANK</span><span class="p">:</span>
+<span class="linenos">229</span>            <span class="n">board</span><span class="p">[</span><span class="n">randomSpace</span><span class="p">]</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="linenos">230</span>            <span class="k">return</span>  <span class="c1"># Return after finding one non-blank tile.</span>
+<span class="linenos">231</span>
+<span class="linenos">232</span>
+<span class="linenos">233</span><span class="k">def</span> <span class="nf">isFull</span><span class="p">(</span><span class="n">board</span><span class="p">):</span>
+<span class="linenos">234</span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Returns True if the board data structure has no blanks.&quot;&quot;&quot;</span>
+<span class="linenos">235</span>    <span class="c1"># Loop over every space on the board:</span>
+<span class="linenos">236</span>    <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">):</span>
+<span class="linenos">237</span>        <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">):</span>
+<span class="linenos">238</span>            <span class="c1"># If a space is blank, return False:</span>
+<span class="linenos">239</span>            <span class="k">if</span> <span class="n">board</span><span class="p">[(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)]</span> <span class="o">==</span> <span class="n">BLANK</span><span class="p">:</span>
+<span class="linenos">240</span>                <span class="k">return</span> <span class="kc">False</span>
+<span class="linenos">241</span>    <span class="k">return</span> <span class="kc">True</span>  <span class="c1"># No space is blank, so return True.</span>
+<span class="linenos">242</span>
+<span class="linenos">243</span>
+<span class="linenos">244</span><span class="c1"># If this program was run (instead of imported), run the game:</span>
+<span class="linenos">245</span><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+<span class="linenos">246</span>    <span class="k">try</span><span class="p">:</span>
+<span class="linenos">247</span>        <span class="n">main</span><span class="p">()</span>
+<span class="linenos">248</span>    <span class="k">except</span> <span class="ne">KeyboardInterrupt</span><span class="p">:</span>
+<span class="linenos">249</span>        <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">()</span>  <span class="c1"># When Ctrl-C is pressed, end the program.</span>
+</pre></div>
+</div>
+</details><p><a class="reference external" href="https://inventwithpython.com/bigbookpython/project79.html">https://inventwithpython.com/bigbookpython/project79.html</a></p>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="trick_questions.html" class="btn btn-neutral float-left" title="Trick Questions" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="vigenere_cipher.html" class="btn btn-neutral float-right" title="Vigenere Cipher" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Marcel Hrdina.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Birthday Paradox &mdash; Coding Club  documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Bitmap Message" href="bitmap_message.html" />
+    <link rel="prev" title="Bagels" href="bagels.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            Coding Club
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">The Big Book of Small Python Projects</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="bagels.html">Bagels</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Birthday Paradox</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bitmap_message.html">Bitmap Message</a></li>
+<li class="toctree-l2"><a class="reference internal" href="blackjack.html">Blackjack</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bouncing_dvd_logo.html">Bouncing DVD Logo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="caesar_cipher.html">Caesar Cipher</a></li>
+<li class="toctree-l2"><a class="reference internal" href="caesar_hacker.html">Caesar Hacker</a></li>
+<li class="toctree-l2"><a class="reference internal" href="calendar_maker.html">Calendar Maker</a></li>
+<li class="toctree-l2"><a class="reference internal" href="carrot_in_a_box.html">Carrot in a Box</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cho_han.html">CHO HAN</a></li>
+<li class="toctree-l2"><a class="reference internal" href="clickbait_headline_generator.html">Clickbait Headline Generator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="collatz_sequence.html">Collatz Sequence</a></li>
+<li class="toctree-l2"><a class="reference internal" href="conways_game_of_life.html">Conways Game of Life</a></li>
+<li class="toctree-l2"><a class="reference internal" href="countdown.html">Countdown</a></li>
+<li class="toctree-l2"><a class="reference internal" href="deep_cave.html">Deep Cave</a></li>
+<li class="toctree-l2"><a class="reference internal" href="diamonds.html">Diamonds</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dice_math.html">Dice Math</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dice_roller.html">Dice Roller</a></li>
+<li class="toctree-l2"><a class="reference internal" href="digital_clock.html">Digital Clock</a></li>
+<li class="toctree-l2"><a class="reference internal" href="digital_stream.html">Digital Stream</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dna_visualization.html">DNA Visualization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ducklings.html">Ducklings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="etching_drawer.html">Etching Drawer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="factor_finder.html">Factor Finder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="fast_draw.html">Fast Draw</a></li>
+<li class="toctree-l2"><a class="reference internal" href="fibonacci.html">Fibonacci</a></li>
+<li class="toctree-l2"><a class="reference internal" href="fish_tank.html">Fish Tank</a></li>
+<li class="toctree-l2"><a class="reference internal" href="flooder.html">Flooder</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="flooder.html#how-it-works">How It Works</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="forest_fire_sim.html">Forest Fire Sim</a></li>
+<li class="toctree-l2"><a class="reference internal" href="four_in_a_row.html">Four in a Row</a></li>
+<li class="toctree-l2"><a class="reference internal" href="guess_the_number.html">Guess the Number</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gullible.html">Gullible</a></li>
+<li class="toctree-l2"><a class="reference internal" href="hacking_minigame.html">Hacking Minigame</a></li>
+<li class="toctree-l2"><a class="reference internal" href="hangman_and_guillotine.html">Hangman and Guillotine</a></li>
+<li class="toctree-l2"><a class="reference internal" href="hex_grid.html">HEX Grid</a></li>
+<li class="toctree-l2"><a class="reference internal" href="hourglass.html">Hourglass</a></li>
+<li class="toctree-l2"><a class="reference internal" href="hungry_robots.html">Hungry Robots</a></li>
+<li class="toctree-l2"><a class="reference internal" href="jaccuse.html">J’accuse</a></li>
+<li class="toctree-l2"><a class="reference internal" href="langtons_ant.html">Langtons Ant</a></li>
+<li class="toctree-l2"><a class="reference internal" href="leetspeak.html">L3375P34]&lt;</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lucky_stars.html">Lucky Stars</a></li>
+<li class="toctree-l2"><a class="reference internal" href="magic_fortune_ball.html">Magic Fortune Ball</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mancala.html">Mancala</a></li>
+<li class="toctree-l2"><a class="reference internal" href="maze_runner_2d.html">Maze Runner 2D</a></li>
+<li class="toctree-l2"><a class="reference internal" href="maze_runner_3d.html">Maze Runner 3D</a></li>
+<li class="toctree-l2"><a class="reference internal" href="million_dice_statistics.html">Million Dice Statistics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mondrian_art_generator.html">Mondrian Art Generator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="monty_hall.html">Monty Hall</a></li>
+<li class="toctree-l2"><a class="reference internal" href="multiplication_table.html">Multiplication Table</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ninety_nine_bottles.html">Ninety Nine Bottles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ninety_nniine_boottels.html">Ninety Nniine Boottels</a></li>
+<li class="toctree-l2"><a class="reference internal" href="numeral_systems.html">Numeral Systems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="periodic_table_of_the_elements.html">Periodic Table of the Elements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pig_latin.html">Pig Latin</a></li>
+<li class="toctree-l2"><a class="reference internal" href="powerball_lottery.html">Powerball Lottery</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prime_numbers.html">Prime Numbers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="progress_bar.html">Progress Bar</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rainbow.html">Rainbow</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rock_paper_scissors.html">Rock Paper Scissors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rock_paper_scissors_always-win_version.html">Rock Paper Scissors (Always Win Version)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rot13_cipher.html">ROT13 Cipher</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rotating_cube.html">Rotating Cube</a></li>
+<li class="toctree-l2"><a class="reference internal" href="royal_game_of_ur.html">Royal Game of Ur</a></li>
+<li class="toctree-l2"><a class="reference internal" href="seven-segment_display_module.html">Seven Segment Display Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="shining_carpet.html">Shining Carpet</a></li>
+<li class="toctree-l2"><a class="reference internal" href="simple_substitution_cipher.html">Simple Substitution Cipher</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sine_message.html">Sine Message</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sliding_tile_puzzle.html">Sliding Tile Puzzle</a></li>
+<li class="toctree-l2"><a class="reference internal" href="snail_race.html">Snail Race</a></li>
+<li class="toctree-l2"><a class="reference internal" href="soroban_japanese_abacus.html">Soroban Japanese Abacus</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sound_mimic.html">Sound Mimic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="spongecase.html">Spongecase</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sudoku_puzzle.html">Sudoku Puzzle</a></li>
+<li class="toctree-l2"><a class="reference internal" href="text_to_speech_talker.html">Text to Speech Talker</a></li>
+<li class="toctree-l2"><a class="reference internal" href="three-card_monte.html">Three Card Monte</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tic-tac-toe.html">Tic-Tac-Toe</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tower_of_hanoi.html">Tower of Hanoi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="trick_questions.html">Trick Questions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="twenty_forty_eight.html">Twenty Forty Eight</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vigenere_cipher.html">Vigenere Cipher</a></li>
+<li class="toctree-l2"><a class="reference internal" href="water_bucket_puzzle.html">Water Bucket Puzzle</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../cryptography/index.html">Cracking Codes with Python</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../cryptography/reverse.html">Reverse Cipher</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cryptography/caesar.html">Caesar Cipher</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cryptography/transposition.html">Transposition Cipher</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cryptography/affine.html">Affine Cipher</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cryptography/simple_substitution.html">Simple Substitution Cipher</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cryptography/vigenere.html">Vigenere Cipher</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../coding_math/index.html">Coding Math</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#introduction">1 - Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#intro-to-trigonometry">2 - Intro to Trigonometry</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#more-trigonometry">3 - More Trigonometry</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#circles-ellipses-and-lissajous-curves">4 - Circles, Ellipses and Lissajous Curves</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#arctangent">5 - Arctangent</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#vectors-part-i">6 - Vectors, Part I</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#vectors-part-2">7 - Vectors Part 2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#velocity">8 - Velocity</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#acceleration">9 - Acceleration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#advanced-acceleration">10 - Advanced Acceleration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#gravity">11 - Gravity</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#edge-handling">12 - Edge Handling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#friction">13 - Friction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#collision-detection">14 - Collision Detection</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#springs-part-1">15 - Springs Part 1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#springs-part-2">16 - Springs Part 2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#particles-optimization">17 - Particles - Optimization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#particles-enhancements">18 - Particles - Enhancements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#bezier-curves">19 - Bezier Curves</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#more-on-bezier-curves">20 - More on Bezier Curves</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#bitmap-collision-detection">21 - Bitmap Collision Detection</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#d-postcards-in-space">22 - 3D - Postcards in Space</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#d-carousel">23 - 3D Carousel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#d-points-and-lines">24: 3D Points and Lines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#d-modeling-points-and-lines-part-2">25 - 3D Modeling, Points and Lines Part 2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#d-and-3d-coordinate-rotation">26 - 2D and 3D Coordinate Rotation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#easing-and-tweening">27 - Easing and Tweening</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#more-on-easing">28 - More on Easing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#tweening-part-1">29 - Tweening Part 1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#tweening-part-ii">30 - Tweening Part II</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#tweening-part-iii">31 - Tweening Part III</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#line-intersections-part-i">32 - Line Intersections Part I</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#line-intersections-part-ii">33 - Line Intersections Part II</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#line-intersections-part-iii">34 - Line Intersections Part III</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#intro-to-fractals">35 - Intro to Fractals</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#verlet-integration-part-i">36 - Verlet Integration Part I</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#verlet-integration-part-ii">37 - Verlet Integration Part II</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#verlet-integration-part-iii">38 - Verlet Integration Part III</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#verlet-integration-part-iv">39 - Verlet Integration Part IV</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#fractal-trees">40 - Fractal Trees</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#isometric-3d-part-i">41 - Isometric 3D Part I</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#isometric-3d-part-ii">42 - Isometric 3D Part II</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#id1">42 - Isometric 3D Part II</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#kinematics-part-i">43 - Kinematics Part I</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#kinematics-part-ii">44 - Kinematics Part II</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#kinematics-part-iii">45 - Kinematics Part III</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#kinematics-part-iv">46 - Kinematics Part IV</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#weighted-random">47 - Weighted Random</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#matrix-math-part-i">48 - Matrix Math Part I</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#matrix-math-part-ii">49 - Matrix Math Part II</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#ifs-fractals">50 - IFS Fractals</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#pseudo-random-number-generators-part-i">51 - Pseudo Random Number Generators Part I</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#pseudo-random-number-generators-part-ii">52 - Pseudo Random Number Generators, Part II</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#random-circle-packing">53 - Random Circle Packing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#dot-product">54 - Dot Product</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#aspect-ratio">55 - Aspect Ratio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#box-layout">56 - Box Layout</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#grid-layout">57 - Grid Layout</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#array-math">58 - Array Math</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../shaders/index.html">Shaders</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../coding_train/index.html">Coding Train Challenge</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../nature_of_code/index.html">The Nature of Code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../games/index.html">Games</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../games/asteroids.html">Asteroids</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../games/bird.html">Bird</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../games/blackjack.html">Blackjack</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../games/blocks.html">Blocks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../games/eyes.html">Eyes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../games/fifteen.html">Fifteen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../games/flowers.html">Flowers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../games/ghoulash.html">Ghoulash</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../games/life.html">Life</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../games/snake.html">Snake</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../games/sokoban.html">Sokoban</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../games/rock_paper_scissors.html">Rock Paper Scissors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../games/hangman.html">Hangman</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../games/poker_dice.html">Poker Dice</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Coding Club</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">The Big Book of Small Python Projects</a></li>
+      <li class="breadcrumb-item active">Birthday Paradox</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/small_projects/birthday_paradox.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="birthday-paradox">
+<h1>Birthday Paradox<a class="headerlink" href="#birthday-paradox" title="Permalink to this heading"></a></h1>
+<p class="tags"><span>Tags: </span><a class="reference external" href="../_tags/math.html">math</a><span>, </span><a class="reference external" href="../_tags/simulation.html">simulation</a></p>
+<p>The Birthday Paradox, also called the Birthday Problem, is the surprisingly
+high probability that two people will have the same birthday even in a small
+group of people. In a group of 70 people, there’s a 99.9 percent chance of two
+people having a matching birthday. But even in a group as small as 23 people,
+there’s a 50 percent chance of a matching birthday. This program performs
+several probability experiments to determine the percentages for groups of
+different sizes. We call these types of experiments, in which we conduct
+multiple random trials to understand the likely outcomes, Monte Carlo
+experiments.</p>
+<p>You can find out more about the Birthday Paradox at
+<a class="reference external" href="https://en.wikipedia.org/wiki/Birthday_problem">https://en.wikipedia.org/wiki/Birthday_problem</a>.</p>
+<details class="summary-birthday-paradox-py">
+<summary>birthday_paradox.py</summary><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos">  1</span>
+<span class="linenos">  2</span><span class="sd">&quot;&quot;&quot;Birthday Paradox Simulation, by Al Sweigart al@inventwithpython.com</span>
+<span class="linenos">  3</span><span class="sd">Explore the surprising probabilities of the &quot;Birthday Paradox&quot;.</span>
+<span class="linenos">  4</span><span class="sd">More info at https://en.wikipedia.org/wiki/Birthday_problem</span>
+<span class="linenos">  5</span><span class="sd">This code is available at https://nostarch.com/big-book-small-python-programming</span>
+<span class="linenos">  6</span><span class="sd">Tags: short, math, simulation&quot;&quot;&quot;</span>
+<span class="linenos">  7</span>
+<span class="linenos">  8</span><span class="kn">import</span> <span class="nn">datetime</span><span class="o">,</span> <span class="nn">random</span>
+<span class="linenos">  9</span>
+<span class="linenos"> 10</span>
+<span class="linenos"> 11</span><span class="k">def</span> <span class="nf">getBirthdays</span><span class="p">(</span><span class="n">numberOfBirthdays</span><span class="p">):</span>
+<span class="linenos"> 12</span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Returns a list of number random date objects for birthdays.&quot;&quot;&quot;</span>
+<span class="linenos"> 13</span>    <span class="n">birthdays</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="linenos"> 14</span>    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">numberOfBirthdays</span><span class="p">):</span>
+<span class="linenos"> 15</span>        <span class="c1"># The year is unimportant for our simulation, as long as all</span>
+<span class="linenos"> 16</span>        <span class="c1"># birthdays have the same year.</span>
+<span class="linenos"> 17</span>        <span class="n">startOfYear</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">date</span><span class="p">(</span><span class="mi">2001</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="linenos"> 18</span>
+<span class="linenos"> 19</span>        <span class="c1"># Get a random day into the year:</span>
+<span class="linenos"> 20</span>        <span class="n">randomNumberOfDays</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">timedelta</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">364</span><span class="p">))</span>
+<span class="linenos"> 21</span>        <span class="n">birthday</span> <span class="o">=</span> <span class="n">startOfYear</span> <span class="o">+</span> <span class="n">randomNumberOfDays</span>
+<span class="linenos"> 22</span>        <span class="n">birthdays</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">birthday</span><span class="p">)</span>
+<span class="linenos"> 23</span>    <span class="k">return</span> <span class="n">birthdays</span>
+<span class="linenos"> 24</span>
+<span class="linenos"> 25</span>
+<span class="linenos"> 26</span><span class="k">def</span> <span class="nf">getMatch</span><span class="p">(</span><span class="n">birthdays</span><span class="p">):</span>
+<span class="linenos"> 27</span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Returns the date object of a birthday that occurs more than once</span>
+<span class="linenos"> 28</span><span class="sd">    in the birthdays list.&quot;&quot;&quot;</span>
+<span class="linenos"> 29</span>    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">birthdays</span><span class="p">)</span> <span class="o">==</span> <span class="nb">len</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">birthdays</span><span class="p">)):</span>
+<span class="linenos"> 30</span>        <span class="k">return</span> <span class="kc">None</span>  <span class="c1"># All birthdays are unique, so return None.</span>
+<span class="linenos"> 31</span>
+<span class="linenos"> 32</span>    <span class="c1"># Compare each birthday to every other birthday:</span>
+<span class="linenos"> 33</span>    <span class="k">for</span> <span class="n">a</span><span class="p">,</span> <span class="n">birthdayA</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">birthdays</span><span class="p">):</span>
+<span class="linenos"> 34</span>        <span class="k">for</span> <span class="n">b</span><span class="p">,</span> <span class="n">birthdayB</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">birthdays</span><span class="p">[</span><span class="n">a</span> <span class="o">+</span> <span class="mi">1</span> <span class="p">:]):</span>
+<span class="linenos"> 35</span>            <span class="k">if</span> <span class="n">birthdayA</span> <span class="o">==</span> <span class="n">birthdayB</span><span class="p">:</span>
+<span class="linenos"> 36</span>                <span class="k">return</span> <span class="n">birthdayA</span>  <span class="c1"># Return the matching birthday.</span>
+<span class="linenos"> 37</span>
+<span class="linenos"> 38</span>
+<span class="linenos"> 39</span><span class="c1"># Display the intro:</span>
+<span class="linenos"> 40</span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;&#39;&#39;Birthday Paradox, by Al Sweigart al@inventwithpython.com</span>
+<span class="linenos"> 41</span>
+<span class="linenos"> 42</span><span class="s1">The birthday paradox shows us that in a group of N people, the odds</span>
+<span class="linenos"> 43</span><span class="s1">that two of them have matching birthdays is surprisingly large.</span>
+<span class="linenos"> 44</span><span class="s1">This program does a Monte Carlo simulation (that is, repeated random</span>
+<span class="linenos"> 45</span><span class="s1">simulations) to explore this concept.</span>
+<span class="linenos"> 46</span>
+<span class="linenos"> 47</span><span class="s1">(It&#39;s not actually a paradox, it&#39;s just a surprising result.)</span>
+<span class="linenos"> 48</span><span class="s1">&#39;&#39;&#39;</span><span class="p">)</span>
+<span class="linenos"> 49</span>
+<span class="linenos"> 50</span><span class="c1"># Set up a tuple of month names in order:</span>
+<span class="linenos"> 51</span><span class="n">MONTHS</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;Jan&#39;</span><span class="p">,</span> <span class="s1">&#39;Feb&#39;</span><span class="p">,</span> <span class="s1">&#39;Mar&#39;</span><span class="p">,</span> <span class="s1">&#39;Apr&#39;</span><span class="p">,</span> <span class="s1">&#39;May&#39;</span><span class="p">,</span> <span class="s1">&#39;Jun&#39;</span><span class="p">,</span>
+<span class="linenos"> 52</span>          <span class="s1">&#39;Jul&#39;</span><span class="p">,</span> <span class="s1">&#39;Aug&#39;</span><span class="p">,</span> <span class="s1">&#39;Sep&#39;</span><span class="p">,</span> <span class="s1">&#39;Oct&#39;</span><span class="p">,</span> <span class="s1">&#39;Nov&#39;</span><span class="p">,</span> <span class="s1">&#39;Dec&#39;</span><span class="p">)</span>
+<span class="linenos"> 53</span>
+<span class="linenos"> 54</span><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>  <span class="c1"># Keep asking until the user enters a valid amount.</span>
+<span class="linenos"> 55</span>    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;How many birthdays shall I generate? (Max 100)&#39;</span><span class="p">)</span>
+<span class="linenos"> 56</span>    <span class="n">response</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;&gt; &#39;</span><span class="p">)</span>
+<span class="linenos"> 57</span>    <span class="k">if</span> <span class="n">response</span><span class="o">.</span><span class="n">isdecimal</span><span class="p">()</span> <span class="ow">and</span> <span class="p">(</span><span class="mi">0</span> <span class="o">&lt;</span> <span class="nb">int</span><span class="p">(</span><span class="n">response</span><span class="p">)</span> <span class="o">&lt;=</span> <span class="mi">100</span><span class="p">):</span>
+<span class="linenos"> 58</span>        <span class="n">numBDays</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">response</span><span class="p">)</span>
+<span class="linenos"> 59</span>        <span class="k">break</span>  <span class="c1"># User has entered a valid amount.</span>
+<span class="linenos"> 60</span><span class="nb">print</span><span class="p">()</span>
+<span class="linenos"> 61</span>
+<span class="linenos"> 62</span><span class="c1"># Generate and display the birthdays:</span>
+<span class="linenos"> 63</span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Here are&#39;</span><span class="p">,</span> <span class="n">numBDays</span><span class="p">,</span> <span class="s1">&#39;birthdays:&#39;</span><span class="p">)</span>
+<span class="linenos"> 64</span><span class="n">birthdays</span> <span class="o">=</span> <span class="n">getBirthdays</span><span class="p">(</span><span class="n">numBDays</span><span class="p">)</span>
+<span class="linenos"> 65</span><span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">birthday</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">birthdays</span><span class="p">):</span>
+<span class="linenos"> 66</span>    <span class="k">if</span> <span class="n">i</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+<span class="linenos"> 67</span>        <span class="c1"># Display a comma for each birthday after the first birthday.</span>
+<span class="linenos"> 68</span>        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;, &#39;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+<span class="linenos"> 69</span>    <span class="n">monthName</span> <span class="o">=</span> <span class="n">MONTHS</span><span class="p">[</span><span class="n">birthday</span><span class="o">.</span><span class="n">month</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span>
+<span class="linenos"> 70</span>    <span class="n">dateText</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="si">{}</span><span class="s1"> </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">monthName</span><span class="p">,</span> <span class="n">birthday</span><span class="o">.</span><span class="n">day</span><span class="p">)</span>
+<span class="linenos"> 71</span>    <span class="nb">print</span><span class="p">(</span><span class="n">dateText</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+<span class="linenos"> 72</span><span class="nb">print</span><span class="p">()</span>
+<span class="linenos"> 73</span><span class="nb">print</span><span class="p">()</span>
+<span class="linenos"> 74</span>
+<span class="linenos"> 75</span><span class="c1"># Determine if there are two birthdays that match.</span>
+<span class="linenos"> 76</span><span class="n">match</span> <span class="o">=</span> <span class="n">getMatch</span><span class="p">(</span><span class="n">birthdays</span><span class="p">)</span>
+<span class="linenos"> 77</span>
+<span class="linenos"> 78</span><span class="c1"># Display the results:</span>
+<span class="linenos"> 79</span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;In this simulation, &#39;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+<span class="linenos"> 80</span><span class="k">if</span> <span class="n">match</span> <span class="o">!=</span> <span class="kc">None</span><span class="p">:</span>
+<span class="linenos"> 81</span>    <span class="n">monthName</span> <span class="o">=</span> <span class="n">MONTHS</span><span class="p">[</span><span class="n">match</span><span class="o">.</span><span class="n">month</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span>
+<span class="linenos"> 82</span>    <span class="n">dateText</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="si">{}</span><span class="s1"> </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">monthName</span><span class="p">,</span> <span class="n">match</span><span class="o">.</span><span class="n">day</span><span class="p">)</span>
+<span class="linenos"> 83</span>    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;multiple people have a birthday on&#39;</span><span class="p">,</span> <span class="n">dateText</span><span class="p">)</span>
+<span class="linenos"> 84</span><span class="k">else</span><span class="p">:</span>
+<span class="linenos"> 85</span>    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;there are no matching birthdays.&#39;</span><span class="p">)</span>
+<span class="linenos"> 86</span><span class="nb">print</span><span class="p">()</span>
+<span class="linenos"> 87</span>
+<span class="linenos"> 88</span><span class="c1"># Run through 100,000 simulations:</span>
+<span class="linenos"> 89</span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Generating&#39;</span><span class="p">,</span> <span class="n">numBDays</span><span class="p">,</span> <span class="s1">&#39;random birthdays 100,000 times...&#39;</span><span class="p">)</span>
+<span class="linenos"> 90</span><span class="nb">input</span><span class="p">(</span><span class="s1">&#39;Press Enter to begin...&#39;</span><span class="p">)</span>
+<span class="linenos"> 91</span>
+<span class="linenos"> 92</span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Let</span><span class="se">\&#39;</span><span class="s1">s run another 100,000 simulations.&#39;</span><span class="p">)</span>
+<span class="linenos"> 93</span><span class="n">simMatch</span> <span class="o">=</span> <span class="mi">0</span>  <span class="c1"># How many simulations had matching birthdays in them.</span>
+<span class="linenos"> 94</span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">100000</span><span class="p">):</span>
+<span class="linenos"> 95</span>    <span class="c1"># Report on the progress every 10,000 simulations:</span>
+<span class="linenos"> 96</span>    <span class="k">if</span> <span class="n">i</span> <span class="o">%</span> <span class="mi">10000</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+<span class="linenos"> 97</span>        <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="s1">&#39;simulations run...&#39;</span><span class="p">)</span>
+<span class="linenos"> 98</span>    <span class="n">birthdays</span> <span class="o">=</span> <span class="n">getBirthdays</span><span class="p">(</span><span class="n">numBDays</span><span class="p">)</span>
+<span class="linenos"> 99</span>    <span class="k">if</span> <span class="n">getMatch</span><span class="p">(</span><span class="n">birthdays</span><span class="p">)</span> <span class="o">!=</span> <span class="kc">None</span><span class="p">:</span>
+<span class="linenos">100</span>        <span class="n">simMatch</span> <span class="o">=</span> <span class="n">simMatch</span> <span class="o">+</span> <span class="mi">1</span>
+<span class="linenos">101</span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;100,000 simulations run.&#39;</span><span class="p">)</span>
+<span class="linenos">102</span>
+<span class="linenos">103</span><span class="c1"># Display simulation results:</span>
+<span class="linenos">104</span><span class="n">probability</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="n">simMatch</span> <span class="o">/</span> <span class="mi">100000</span> <span class="o">*</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+<span class="linenos">105</span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Out of 100,000 simulations of&#39;</span><span class="p">,</span> <span class="n">numBDays</span><span class="p">,</span> <span class="s1">&#39;people, there was a&#39;</span><span class="p">)</span>
+<span class="linenos">106</span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;matching birthday in that group&#39;</span><span class="p">,</span> <span class="n">simMatch</span><span class="p">,</span> <span class="s1">&#39;times. This means&#39;</span><span class="p">)</span>
+<span class="linenos">107</span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;that&#39;</span><span class="p">,</span> <span class="n">numBDays</span><span class="p">,</span> <span class="s1">&#39;people have a&#39;</span><span class="p">,</span> <span class="n">probability</span><span class="p">,</span> <span class="s1">&#39;</span><span class="si">% c</span><span class="s1">hance of&#39;</span><span class="p">)</span>
+<span class="linenos">108</span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;having a matching birthday in their group.&#39;</span><span class="p">)</span>
+<span class="linenos">109</span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;That</span><span class="se">\&#39;</span><span class="s1">s probably more than you would think!&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</details><p><a class="reference external" href="https://inventwithpython.com/bigbookpython/project2.html">https://inventwithpython.com/bigbookpython/project2.html</a></p>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="bagels.html" class="btn btn-neutral float-left" title="Bagels" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="bitmap_message.html" class="btn btn-neutral float-right" title="Bitmap Message" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Marcel Hrdina.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

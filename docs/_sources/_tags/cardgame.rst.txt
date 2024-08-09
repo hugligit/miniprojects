@@ -1,0 +1,9 @@
+My tags: cardgame
+#################
+
+.. toctree::
+    :maxdepth: 1
+    :caption: With this tag
+
+    ../small_projects/blackjack.rst
+    ../small_projects/three-card_monte.rst

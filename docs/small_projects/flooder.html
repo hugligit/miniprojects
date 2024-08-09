@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flooder &mdash; Coding Club  documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Forest Fire Sim" href="forest_fire_sim.html" />
+    <link rel="prev" title="Fish Tank" href="fish_tank.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            Coding Club
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">The Big Book of Small Python Projects</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="bagels.html">Bagels</a></li>
+<li class="toctree-l2"><a class="reference internal" href="birthday_paradox.html">Birthday Paradox</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bitmap_message.html">Bitmap Message</a></li>
+<li class="toctree-l2"><a class="reference internal" href="blackjack.html">Blackjack</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bouncing_dvd_logo.html">Bouncing DVD Logo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="caesar_cipher.html">Caesar Cipher</a></li>
+<li class="toctree-l2"><a class="reference internal" href="caesar_hacker.html">Caesar Hacker</a></li>
+<li class="toctree-l2"><a class="reference internal" href="calendar_maker.html">Calendar Maker</a></li>
+<li class="toctree-l2"><a class="reference internal" href="carrot_in_a_box.html">Carrot in a Box</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cho_han.html">CHO HAN</a></li>
+<li class="toctree-l2"><a class="reference internal" href="clickbait_headline_generator.html">Clickbait Headline Generator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="collatz_sequence.html">Collatz Sequence</a></li>
+<li class="toctree-l2"><a class="reference internal" href="conways_game_of_life.html">Conways Game of Life</a></li>
+<li class="toctree-l2"><a class="reference internal" href="countdown.html">Countdown</a></li>
+<li class="toctree-l2"><a class="reference internal" href="deep_cave.html">Deep Cave</a></li>
+<li class="toctree-l2"><a class="reference internal" href="diamonds.html">Diamonds</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dice_math.html">Dice Math</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dice_roller.html">Dice Roller</a></li>
+<li class="toctree-l2"><a class="reference internal" href="digital_clock.html">Digital Clock</a></li>
+<li class="toctree-l2"><a class="reference internal" href="digital_stream.html">Digital Stream</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dna_visualization.html">DNA Visualization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ducklings.html">Ducklings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="etching_drawer.html">Etching Drawer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="factor_finder.html">Factor Finder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="fast_draw.html">Fast Draw</a></li>
+<li class="toctree-l2"><a class="reference internal" href="fibonacci.html">Fibonacci</a></li>
+<li class="toctree-l2"><a class="reference internal" href="fish_tank.html">Fish Tank</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Flooder</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#how-it-works">How It Works</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="forest_fire_sim.html">Forest Fire Sim</a></li>
+<li class="toctree-l2"><a class="reference internal" href="four_in_a_row.html">Four in a Row</a></li>
+<li class="toctree-l2"><a class="reference internal" href="guess_the_number.html">Guess the Number</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gullible.html">Gullible</a></li>
+<li class="toctree-l2"><a class="reference internal" href="hacking_minigame.html">Hacking Minigame</a></li>
+<li class="toctree-l2"><a class="reference internal" href="hangman_and_guillotine.html">Hangman and Guillotine</a></li>
+<li class="toctree-l2"><a class="reference internal" href="hex_grid.html">HEX Grid</a></li>
+<li class="toctree-l2"><a class="reference internal" href="hourglass.html">Hourglass</a></li>
+<li class="toctree-l2"><a class="reference internal" href="hungry_robots.html">Hungry Robots</a></li>
+<li class="toctree-l2"><a class="reference internal" href="jaccuse.html">J’accuse</a></li>
+<li class="toctree-l2"><a class="reference internal" href="langtons_ant.html">Langtons Ant</a></li>
+<li class="toctree-l2"><a class="reference internal" href="leetspeak.html">L3375P34]&lt;</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lucky_stars.html">Lucky Stars</a></li>
+<li class="toctree-l2"><a class="reference internal" href="magic_fortune_ball.html">Magic Fortune Ball</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mancala.html">Mancala</a></li>
+<li class="toctree-l2"><a class="reference internal" href="maze_runner_2d.html">Maze Runner 2D</a></li>
+<li class="toctree-l2"><a class="reference internal" href="maze_runner_3d.html">Maze Runner 3D</a></li>
+<li class="toctree-l2"><a class="reference internal" href="million_dice_statistics.html">Million Dice Statistics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mondrian_art_generator.html">Mondrian Art Generator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="monty_hall.html">Monty Hall</a></li>
+<li class="toctree-l2"><a class="reference internal" href="multiplication_table.html">Multiplication Table</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ninety_nine_bottles.html">Ninety Nine Bottles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ninety_nniine_boottels.html">Ninety Nniine Boottels</a></li>
+<li class="toctree-l2"><a class="reference internal" href="numeral_systems.html">Numeral Systems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="periodic_table_of_the_elements.html">Periodic Table of the Elements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pig_latin.html">Pig Latin</a></li>
+<li class="toctree-l2"><a class="reference internal" href="powerball_lottery.html">Powerball Lottery</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prime_numbers.html">Prime Numbers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="progress_bar.html">Progress Bar</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rainbow.html">Rainbow</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rock_paper_scissors.html">Rock Paper Scissors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rock_paper_scissors_always-win_version.html">Rock Paper Scissors (Always Win Version)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rot13_cipher.html">ROT13 Cipher</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rotating_cube.html">Rotating Cube</a></li>
+<li class="toctree-l2"><a class="reference internal" href="royal_game_of_ur.html">Royal Game of Ur</a></li>
+<li class="toctree-l2"><a class="reference internal" href="seven-segment_display_module.html">Seven Segment Display Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="shining_carpet.html">Shining Carpet</a></li>
+<li class="toctree-l2"><a class="reference internal" href="simple_substitution_cipher.html">Simple Substitution Cipher</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sine_message.html">Sine Message</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sliding_tile_puzzle.html">Sliding Tile Puzzle</a></li>
+<li class="toctree-l2"><a class="reference internal" href="snail_race.html">Snail Race</a></li>
+<li class="toctree-l2"><a class="reference internal" href="soroban_japanese_abacus.html">Soroban Japanese Abacus</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sound_mimic.html">Sound Mimic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="spongecase.html">Spongecase</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sudoku_puzzle.html">Sudoku Puzzle</a></li>
+<li class="toctree-l2"><a class="reference internal" href="text_to_speech_talker.html">Text to Speech Talker</a></li>
+<li class="toctree-l2"><a class="reference internal" href="three-card_monte.html">Three Card Monte</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tic-tac-toe.html">Tic-Tac-Toe</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tower_of_hanoi.html">Tower of Hanoi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="trick_questions.html">Trick Questions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="twenty_forty_eight.html">Twenty Forty Eight</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vigenere_cipher.html">Vigenere Cipher</a></li>
+<li class="toctree-l2"><a class="reference internal" href="water_bucket_puzzle.html">Water Bucket Puzzle</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../cryptography/index.html">Cracking Codes with Python</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../cryptography/reverse.html">Reverse Cipher</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cryptography/caesar.html">Caesar Cipher</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cryptography/transposition.html">Transposition Cipher</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cryptography/affine.html">Affine Cipher</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cryptography/simple_substitution.html">Simple Substitution Cipher</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cryptography/vigenere.html">Vigenere Cipher</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../coding_math/index.html">Coding Math</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#introduction">1 - Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#intro-to-trigonometry">2 - Intro to Trigonometry</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#more-trigonometry">3 - More Trigonometry</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#circles-ellipses-and-lissajous-curves">4 - Circles, Ellipses and Lissajous Curves</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#arctangent">5 - Arctangent</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#vectors-part-i">6 - Vectors, Part I</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#vectors-part-2">7 - Vectors Part 2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#velocity">8 - Velocity</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#acceleration">9 - Acceleration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#advanced-acceleration">10 - Advanced Acceleration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#gravity">11 - Gravity</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#edge-handling">12 - Edge Handling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#friction">13 - Friction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#collision-detection">14 - Collision Detection</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#springs-part-1">15 - Springs Part 1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#springs-part-2">16 - Springs Part 2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#particles-optimization">17 - Particles - Optimization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#particles-enhancements">18 - Particles - Enhancements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#bezier-curves">19 - Bezier Curves</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#more-on-bezier-curves">20 - More on Bezier Curves</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#bitmap-collision-detection">21 - Bitmap Collision Detection</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#d-postcards-in-space">22 - 3D - Postcards in Space</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#d-carousel">23 - 3D Carousel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#d-points-and-lines">24: 3D Points and Lines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#d-modeling-points-and-lines-part-2">25 - 3D Modeling, Points and Lines Part 2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#d-and-3d-coordinate-rotation">26 - 2D and 3D Coordinate Rotation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#easing-and-tweening">27 - Easing and Tweening</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#more-on-easing">28 - More on Easing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#tweening-part-1">29 - Tweening Part 1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#tweening-part-ii">30 - Tweening Part II</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#tweening-part-iii">31 - Tweening Part III</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#line-intersections-part-i">32 - Line Intersections Part I</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#line-intersections-part-ii">33 - Line Intersections Part II</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#line-intersections-part-iii">34 - Line Intersections Part III</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#intro-to-fractals">35 - Intro to Fractals</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#verlet-integration-part-i">36 - Verlet Integration Part I</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#verlet-integration-part-ii">37 - Verlet Integration Part II</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#verlet-integration-part-iii">38 - Verlet Integration Part III</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#verlet-integration-part-iv">39 - Verlet Integration Part IV</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#fractal-trees">40 - Fractal Trees</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#isometric-3d-part-i">41 - Isometric 3D Part I</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#isometric-3d-part-ii">42 - Isometric 3D Part II</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#id1">42 - Isometric 3D Part II</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#kinematics-part-i">43 - Kinematics Part I</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#kinematics-part-ii">44 - Kinematics Part II</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#kinematics-part-iii">45 - Kinematics Part III</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#kinematics-part-iv">46 - Kinematics Part IV</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#weighted-random">47 - Weighted Random</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#matrix-math-part-i">48 - Matrix Math Part I</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#matrix-math-part-ii">49 - Matrix Math Part II</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#ifs-fractals">50 - IFS Fractals</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#pseudo-random-number-generators-part-i">51 - Pseudo Random Number Generators Part I</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#pseudo-random-number-generators-part-ii">52 - Pseudo Random Number Generators, Part II</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#random-circle-packing">53 - Random Circle Packing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#dot-product">54 - Dot Product</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#aspect-ratio">55 - Aspect Ratio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#box-layout">56 - Box Layout</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#grid-layout">57 - Grid Layout</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coding_math/index.html#array-math">58 - Array Math</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../shaders/index.html">Shaders</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../coding_train/index.html">Coding Train Challenge</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../nature_of_code/index.html">The Nature of Code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../games/index.html">Games</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../games/asteroids.html">Asteroids</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../games/bird.html">Bird</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../games/blackjack.html">Blackjack</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../games/blocks.html">Blocks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../games/eyes.html">Eyes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../games/fifteen.html">Fifteen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../games/flowers.html">Flowers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../games/ghoulash.html">Ghoulash</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../games/life.html">Life</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../games/snake.html">Snake</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../games/sokoban.html">Sokoban</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../games/rock_paper_scissors.html">Rock Paper Scissors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../games/hangman.html">Hangman</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../games/poker_dice.html">Poker Dice</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Coding Club</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">The Big Book of Small Python Projects</a></li>
+      <li class="breadcrumb-item active">Flooder</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/small_projects/flooder.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="flooder">
+<h1>Flooder<a class="headerlink" href="#flooder" title="Permalink to this heading"></a></h1>
+<p class="tags"><span>Tags: </span><a class="reference external" href="../_tags/large.html">large</a><span>, </span><a class="reference external" href="../_tags/bext.html">bext</a><span>, </span><a class="reference external" href="../_tags/game.html">game</a></p>
+<p>Flooder is a colorful game where a player tries to fill the board with
+a single color by changing the color of the tile in the upper-left corner.
+This new color spreads to all neighboring tiles that matched the original
+color. It’s similar to the Flood It mobile game. This program also has
+a colorblind mode, which uses shapes instead of flat colored tiles. It
+relies on the recursive flood fill algorithm to paint the board and works
+similarly to the “paint bucket” or “fill” tool in many painting
+applications.</p>
+<section id="how-it-works">
+<h2>How It Works<a class="headerlink" href="#how-it-works" title="Permalink to this heading"></a></h2>
+<p>Accessibility is a large issue in video games, and addressing it can take many
+forms. For example, deuteranopia, or red-green colorblindness, causes shades of
+red and green to appear the same, making it hard to distinguish between red
+objects and green objects on the screen. We can make Flooder more accessible
+with a mode that uses distinct shapes instead of distinct colors. Note that
+even the colorblind mode still uses color. This means you can eliminate the
+“standard” mode, if you wish, and have even color-sighted users play in the
+colorblind mode. The best accessibility designs are those that incorporate
+accessibility considerations from the start rather than add them as a separate
+mode. This reduces the amount of code we have to write and makes any future bug
+fixes easier.</p>
+<p>Other accessibility issues include making sure that text is large enough to be
+read without perfect vision, that sound effects have visual cues and spoken
+language has subtitles for those hard of hearing, and that controls can be
+remapped to other keyboard keys so people can play the game with one hand. The
+YouTube channel Game Maker’s Toolkit has a video series called “Designing for
+Disability” that covers many aspects of designing your games with accessibility
+in mind.</p>
+<details class="summary-flooder-py">
+<summary>flooder.py</summary><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos">  1</span><span class="sd">&quot;&quot;&quot;Flooder, by Al Sweigart al@inventwithpython.com</span>
+<span class="linenos">  2</span><span class="sd">A colorful game where you try to fill the board with a single color. Has</span>
+<span class="linenos">  3</span><span class="sd">a mode for colorblind players.</span>
+<span class="linenos">  4</span><span class="sd">Inspired by the &quot;Flood It!&quot; game.</span>
+<span class="linenos">  5</span><span class="sd">This code is available at https://nostarch.com/big-book-small-python-programming</span>
+<span class="linenos">  6</span><span class="sd">Tags: large, bext, game&quot;&quot;&quot;</span>
+<span class="linenos">  7</span>
+<span class="linenos">  8</span><span class="kn">import</span> <span class="nn">random</span><span class="o">,</span> <span class="nn">sys</span>
+<span class="linenos">  9</span>
+<span class="linenos"> 10</span><span class="k">try</span><span class="p">:</span>
+<span class="linenos"> 11</span>    <span class="kn">import</span> <span class="nn">bext</span>
+<span class="linenos"> 12</span><span class="k">except</span> <span class="ne">ImportError</span><span class="p">:</span>
+<span class="linenos"> 13</span>    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;This program requires the bext module, which you&#39;</span><span class="p">)</span>
+<span class="linenos"> 14</span>    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;can install by following the instructions at&#39;</span><span class="p">)</span>
+<span class="linenos"> 15</span>    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;https://pypi.org/project/Bext/&#39;</span><span class="p">)</span>
+<span class="linenos"> 16</span>    <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">()</span>
+<span class="linenos"> 17</span>
+<span class="linenos"> 18</span><span class="c1"># Set up the constants:</span>
+<span class="linenos"> 19</span><span class="n">BOARD_WIDTH</span> <span class="o">=</span> <span class="mi">16</span>  <span class="c1"># (!) Try changing this to 4 or 40.</span>
+<span class="linenos"> 20</span><span class="n">BOARD_HEIGHT</span> <span class="o">=</span> <span class="mi">14</span>  <span class="c1"># (!) Try changing this to 4 or 20.</span>
+<span class="linenos"> 21</span><span class="n">MOVES_PER_GAME</span> <span class="o">=</span> <span class="mi">20</span>  <span class="c1"># (!) Try changing this to 3 or 300.</span>
+<span class="linenos"> 22</span>
+<span class="linenos"> 23</span><span class="c1"># Constants for the different shapes used in colorblind mode:</span>
+<span class="linenos"> 24</span><span class="n">HEART</span>     <span class="o">=</span> <span class="nb">chr</span><span class="p">(</span><span class="mi">9829</span><span class="p">)</span>  <span class="c1"># Character 9829 is &#39;♥&#39;.</span>
+<span class="linenos"> 25</span><span class="n">DIAMOND</span>   <span class="o">=</span> <span class="nb">chr</span><span class="p">(</span><span class="mi">9830</span><span class="p">)</span>  <span class="c1"># Character 9830 is &#39;♦&#39;.</span>
+<span class="linenos"> 26</span><span class="n">SPADE</span>     <span class="o">=</span> <span class="nb">chr</span><span class="p">(</span><span class="mi">9824</span><span class="p">)</span>  <span class="c1"># Character 9824 is &#39;♠&#39;.</span>
+<span class="linenos"> 27</span><span class="n">CLUB</span>      <span class="o">=</span> <span class="nb">chr</span><span class="p">(</span><span class="mi">9827</span><span class="p">)</span>  <span class="c1"># Character 9827 is &#39;♣&#39;.</span>
+<span class="linenos"> 28</span><span class="n">BALL</span>      <span class="o">=</span> <span class="nb">chr</span><span class="p">(</span><span class="mi">9679</span><span class="p">)</span>  <span class="c1"># Character 9679 is &#39;●&#39;.</span>
+<span class="linenos"> 29</span><span class="n">TRIANGLE</span>  <span class="o">=</span> <span class="nb">chr</span><span class="p">(</span><span class="mi">9650</span><span class="p">)</span>  <span class="c1"># Character 9650 is &#39;▲&#39;.</span>
+<span class="linenos"> 30</span>
+<span class="linenos"> 31</span><span class="n">BLOCK</span>     <span class="o">=</span> <span class="nb">chr</span><span class="p">(</span><span class="mi">9608</span><span class="p">)</span>  <span class="c1"># Character 9608 is &#39;█&#39;</span>
+<span class="linenos"> 32</span><span class="n">LEFTRIGHT</span> <span class="o">=</span> <span class="nb">chr</span><span class="p">(</span><span class="mi">9472</span><span class="p">)</span>  <span class="c1"># Character 9472 is &#39;─&#39;</span>
+<span class="linenos"> 33</span><span class="n">UPDOWN</span>    <span class="o">=</span> <span class="nb">chr</span><span class="p">(</span><span class="mi">9474</span><span class="p">)</span>  <span class="c1"># Character 9474 is &#39;│&#39;</span>
+<span class="linenos"> 34</span><span class="n">DOWNRIGHT</span> <span class="o">=</span> <span class="nb">chr</span><span class="p">(</span><span class="mi">9484</span><span class="p">)</span>  <span class="c1"># Character 9484 is &#39;┌&#39;</span>
+<span class="linenos"> 35</span><span class="n">DOWNLEFT</span>  <span class="o">=</span> <span class="nb">chr</span><span class="p">(</span><span class="mi">9488</span><span class="p">)</span>  <span class="c1"># Character 9488 is &#39;┐&#39;</span>
+<span class="linenos"> 36</span><span class="n">UPRIGHT</span>   <span class="o">=</span> <span class="nb">chr</span><span class="p">(</span><span class="mi">9492</span><span class="p">)</span>  <span class="c1"># Character 9492 is &#39;└&#39;</span>
+<span class="linenos"> 37</span><span class="n">UPLEFT</span>    <span class="o">=</span> <span class="nb">chr</span><span class="p">(</span><span class="mi">9496</span><span class="p">)</span>  <span class="c1"># Character 9496 is &#39;┘&#39;</span>
+<span class="linenos"> 38</span><span class="c1"># A list of chr() codes is at https://inventwithpython.com/chr</span>
+<span class="linenos"> 39</span>
+<span class="linenos"> 40</span><span class="c1"># All the color/shape tiles used on the board:</span>
+<span class="linenos"> 41</span><span class="n">TILE_TYPES</span> <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
+<span class="linenos"> 42</span><span class="n">COLORS_MAP</span> <span class="o">=</span> <span class="p">{</span><span class="mi">0</span><span class="p">:</span> <span class="s1">&#39;red&#39;</span><span class="p">,</span> <span class="mi">1</span><span class="p">:</span> <span class="s1">&#39;green&#39;</span><span class="p">,</span> <span class="mi">2</span><span class="p">:</span><span class="s1">&#39;blue&#39;</span><span class="p">,</span>
+<span class="linenos"> 43</span>              <span class="mi">3</span><span class="p">:</span><span class="s1">&#39;yellow&#39;</span><span class="p">,</span> <span class="mi">4</span><span class="p">:</span><span class="s1">&#39;cyan&#39;</span><span class="p">,</span> <span class="mi">5</span><span class="p">:</span><span class="s1">&#39;purple&#39;</span><span class="p">}</span>
+<span class="linenos"> 44</span><span class="n">COLOR_MODE</span> <span class="o">=</span> <span class="s1">&#39;color mode&#39;</span>
+<span class="linenos"> 45</span><span class="n">SHAPES_MAP</span> <span class="o">=</span> <span class="p">{</span><span class="mi">0</span><span class="p">:</span> <span class="n">HEART</span><span class="p">,</span> <span class="mi">1</span><span class="p">:</span> <span class="n">TRIANGLE</span><span class="p">,</span> <span class="mi">2</span><span class="p">:</span> <span class="n">DIAMOND</span><span class="p">,</span>
+<span class="linenos"> 46</span>              <span class="mi">3</span><span class="p">:</span> <span class="n">BALL</span><span class="p">,</span> <span class="mi">4</span><span class="p">:</span> <span class="n">CLUB</span><span class="p">,</span> <span class="mi">5</span><span class="p">:</span> <span class="n">SPADE</span><span class="p">}</span>
+<span class="linenos"> 47</span><span class="n">SHAPE_MODE</span> <span class="o">=</span> <span class="s1">&#39;shape mode&#39;</span>
+<span class="linenos"> 48</span>
+<span class="linenos"> 49</span>
+<span class="linenos"> 50</span><span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+<span class="linenos"> 51</span>    <span class="n">bext</span><span class="o">.</span><span class="n">bg</span><span class="p">(</span><span class="s1">&#39;black&#39;</span><span class="p">)</span>
+<span class="linenos"> 52</span>    <span class="n">bext</span><span class="o">.</span><span class="n">fg</span><span class="p">(</span><span class="s1">&#39;white&#39;</span><span class="p">)</span>
+<span class="linenos"> 53</span>    <span class="n">bext</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>
+<span class="linenos"> 54</span>    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;&#39;&#39;Flooder, by Al Sweigart al@inventwithpython.com</span>
+<span class="linenos"> 55</span>
+<span class="linenos"> 56</span><span class="s1">Set the upper left color/shape, which fills in all the</span>
+<span class="linenos"> 57</span><span class="s1">adjacent squares of that color/shape. Try to make the</span>
+<span class="linenos"> 58</span><span class="s1">entire board the same color/shape.&#39;&#39;&#39;</span><span class="p">)</span>
+<span class="linenos"> 59</span>
+<span class="linenos"> 60</span>    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Do you want to play in colorblind mode? Y/N&#39;</span><span class="p">)</span>
+<span class="linenos"> 61</span>    <span class="n">response</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;&gt; &#39;</span><span class="p">)</span>
+<span class="linenos"> 62</span>    <span class="k">if</span> <span class="n">response</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s1">&#39;Y&#39;</span><span class="p">):</span>
+<span class="linenos"> 63</span>        <span class="n">displayMode</span> <span class="o">=</span> <span class="n">SHAPE_MODE</span>
+<span class="linenos"> 64</span>    <span class="k">else</span><span class="p">:</span>
+<span class="linenos"> 65</span>        <span class="n">displayMode</span> <span class="o">=</span> <span class="n">COLOR_MODE</span>
+<span class="linenos"> 66</span>
+<span class="linenos"> 67</span>    <span class="n">gameBoard</span> <span class="o">=</span> <span class="n">getNewBoard</span><span class="p">()</span>
+<span class="linenos"> 68</span>    <span class="n">movesLeft</span> <span class="o">=</span> <span class="n">MOVES_PER_GAME</span>
+<span class="linenos"> 69</span>
+<span class="linenos"> 70</span>    <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>  <span class="c1"># Main game loop.</span>
+<span class="linenos"> 71</span>        <span class="n">displayBoard</span><span class="p">(</span><span class="n">gameBoard</span><span class="p">,</span> <span class="n">displayMode</span><span class="p">)</span>
+<span class="linenos"> 72</span>
+<span class="linenos"> 73</span>        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Moves left:&#39;</span><span class="p">,</span> <span class="n">movesLeft</span><span class="p">)</span>
+<span class="linenos"> 74</span>        <span class="n">playerMove</span> <span class="o">=</span> <span class="n">askForPlayerMove</span><span class="p">(</span><span class="n">displayMode</span><span class="p">)</span>
+<span class="linenos"> 75</span>        <span class="n">changeTile</span><span class="p">(</span><span class="n">playerMove</span><span class="p">,</span> <span class="n">gameBoard</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+<span class="linenos"> 76</span>        <span class="n">movesLeft</span> <span class="o">-=</span> <span class="mi">1</span>
+<span class="linenos"> 77</span>
+<span class="linenos"> 78</span>        <span class="k">if</span> <span class="n">hasWon</span><span class="p">(</span><span class="n">gameBoard</span><span class="p">):</span>
+<span class="linenos"> 79</span>            <span class="n">displayBoard</span><span class="p">(</span><span class="n">gameBoard</span><span class="p">,</span> <span class="n">displayMode</span><span class="p">)</span>
+<span class="linenos"> 80</span>            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;You have won!&#39;</span><span class="p">)</span>
+<span class="linenos"> 81</span>            <span class="k">break</span>
+<span class="linenos"> 82</span>        <span class="k">elif</span> <span class="n">movesLeft</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+<span class="linenos"> 83</span>            <span class="n">displayBoard</span><span class="p">(</span><span class="n">gameBoard</span><span class="p">,</span> <span class="n">displayMode</span><span class="p">)</span>
+<span class="linenos"> 84</span>            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;You have run out of moves!&#39;</span><span class="p">)</span>
+<span class="linenos"> 85</span>            <span class="k">break</span>
+<span class="linenos"> 86</span>
+<span class="linenos"> 87</span>
+<span class="linenos"> 88</span><span class="k">def</span> <span class="nf">getNewBoard</span><span class="p">():</span>
+<span class="linenos"> 89</span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Return a dictionary of a new Flood It board.&quot;&quot;&quot;</span>
+<span class="linenos"> 90</span>
+<span class="linenos"> 91</span>    <span class="c1"># Keys are (x, y) tuples, values are the tile at that position.</span>
+<span class="linenos"> 92</span>    <span class="n">board</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="linenos"> 93</span>
+<span class="linenos"> 94</span>    <span class="c1"># Create random colors for the board.</span>
+<span class="linenos"> 95</span>    <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">BOARD_WIDTH</span><span class="p">):</span>
+<span class="linenos"> 96</span>        <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">BOARD_HEIGHT</span><span class="p">):</span>
+<span class="linenos"> 97</span>            <span class="n">board</span><span class="p">[(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)]</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">TILE_TYPES</span><span class="p">)</span>
+<span class="linenos"> 98</span>
+<span class="linenos"> 99</span>    <span class="c1"># Make several tiles the same as their neighbor. This creates groups</span>
+<span class="linenos">100</span>    <span class="c1"># of the same color/shape.</span>
+<span class="linenos">101</span>    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">BOARD_WIDTH</span> <span class="o">*</span> <span class="n">BOARD_HEIGHT</span><span class="p">):</span>
+<span class="linenos">102</span>        <span class="n">x</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">BOARD_WIDTH</span> <span class="o">-</span> <span class="mi">2</span><span class="p">)</span>
+<span class="linenos">103</span>        <span class="n">y</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">BOARD_HEIGHT</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
+<span class="linenos">104</span>        <span class="n">board</span><span class="p">[(</span><span class="n">x</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">y</span><span class="p">)]</span> <span class="o">=</span> <span class="n">board</span><span class="p">[(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)]</span>
+<span class="linenos">105</span>    <span class="k">return</span> <span class="n">board</span>
+<span class="linenos">106</span>
+<span class="linenos">107</span>
+<span class="linenos">108</span><span class="k">def</span> <span class="nf">displayBoard</span><span class="p">(</span><span class="n">board</span><span class="p">,</span> <span class="n">displayMode</span><span class="p">):</span>
+<span class="linenos">109</span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Display the board on the screen.&quot;&quot;&quot;</span>
+<span class="linenos">110</span>    <span class="n">bext</span><span class="o">.</span><span class="n">fg</span><span class="p">(</span><span class="s1">&#39;white&#39;</span><span class="p">)</span>
+<span class="linenos">111</span>    <span class="c1"># Display the top edge of the board:</span>
+<span class="linenos">112</span>    <span class="nb">print</span><span class="p">(</span><span class="n">DOWNRIGHT</span> <span class="o">+</span> <span class="p">(</span><span class="n">LEFTRIGHT</span> <span class="o">*</span> <span class="n">BOARD_WIDTH</span><span class="p">)</span> <span class="o">+</span> <span class="n">DOWNLEFT</span><span class="p">)</span>
+<span class="linenos">113</span>
+<span class="linenos">114</span>    <span class="c1"># Display each row:</span>
+<span class="linenos">115</span>    <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">BOARD_HEIGHT</span><span class="p">):</span>
+<span class="linenos">116</span>        <span class="n">bext</span><span class="o">.</span><span class="n">fg</span><span class="p">(</span><span class="s1">&#39;white&#39;</span><span class="p">)</span>
+<span class="linenos">117</span>        <span class="k">if</span> <span class="n">y</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>  <span class="c1"># The first row begins with &#39;&gt;&#39;.</span>
+<span class="linenos">118</span>            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;&gt;&#39;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+<span class="linenos">119</span>        <span class="k">else</span><span class="p">:</span>  <span class="c1"># Later rows begin with a white vertical line.</span>
+<span class="linenos">120</span>            <span class="nb">print</span><span class="p">(</span><span class="n">UPDOWN</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+<span class="linenos">121</span>
+<span class="linenos">122</span>        <span class="c1"># Display each tile in this row:</span>
+<span class="linenos">123</span>        <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">BOARD_WIDTH</span><span class="p">):</span>
+<span class="linenos">124</span>            <span class="n">bext</span><span class="o">.</span><span class="n">fg</span><span class="p">(</span><span class="n">COLORS_MAP</span><span class="p">[</span><span class="n">board</span><span class="p">[(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)]])</span>
+<span class="linenos">125</span>            <span class="k">if</span> <span class="n">displayMode</span> <span class="o">==</span> <span class="n">COLOR_MODE</span><span class="p">:</span>
+<span class="linenos">126</span>                <span class="nb">print</span><span class="p">(</span><span class="n">BLOCK</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+<span class="linenos">127</span>            <span class="k">elif</span> <span class="n">displayMode</span> <span class="o">==</span> <span class="n">SHAPE_MODE</span><span class="p">:</span>
+<span class="linenos">128</span>                <span class="nb">print</span><span class="p">(</span><span class="n">SHAPES_MAP</span><span class="p">[</span><span class="n">board</span><span class="p">[(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)]],</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+<span class="linenos">129</span>
+<span class="linenos">130</span>        <span class="n">bext</span><span class="o">.</span><span class="n">fg</span><span class="p">(</span><span class="s1">&#39;white&#39;</span><span class="p">)</span>
+<span class="linenos">131</span>        <span class="nb">print</span><span class="p">(</span><span class="n">UPDOWN</span><span class="p">)</span>  <span class="c1"># Rows end with a white vertical line.</span>
+<span class="linenos">132</span>    <span class="c1"># Display the bottom edge of the board:</span>
+<span class="linenos">133</span>    <span class="nb">print</span><span class="p">(</span><span class="n">UPRIGHT</span> <span class="o">+</span> <span class="p">(</span><span class="n">LEFTRIGHT</span> <span class="o">*</span> <span class="n">BOARD_WIDTH</span><span class="p">)</span> <span class="o">+</span> <span class="n">UPLEFT</span><span class="p">)</span>
+<span class="linenos">134</span>
+<span class="linenos">135</span>
+<span class="linenos">136</span><span class="k">def</span> <span class="nf">askForPlayerMove</span><span class="p">(</span><span class="n">displayMode</span><span class="p">):</span>
+<span class="linenos">137</span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Let the player select a color to paint the upper left tile.&quot;&quot;&quot;</span>
+<span class="linenos">138</span>    <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+<span class="linenos">139</span>        <span class="n">bext</span><span class="o">.</span><span class="n">fg</span><span class="p">(</span><span class="s1">&#39;white&#39;</span><span class="p">)</span>
+<span class="linenos">140</span>        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Choose one of &#39;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+<span class="linenos">141</span>
+<span class="linenos">142</span>        <span class="k">if</span> <span class="n">displayMode</span> <span class="o">==</span> <span class="n">COLOR_MODE</span><span class="p">:</span>
+<span class="linenos">143</span>            <span class="n">bext</span><span class="o">.</span><span class="n">fg</span><span class="p">(</span><span class="s1">&#39;red&#39;</span><span class="p">)</span>
+<span class="linenos">144</span>            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;(R)ed &#39;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+<span class="linenos">145</span>            <span class="n">bext</span><span class="o">.</span><span class="n">fg</span><span class="p">(</span><span class="s1">&#39;green&#39;</span><span class="p">)</span>
+<span class="linenos">146</span>            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;(G)reen &#39;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+<span class="linenos">147</span>            <span class="n">bext</span><span class="o">.</span><span class="n">fg</span><span class="p">(</span><span class="s1">&#39;blue&#39;</span><span class="p">)</span>
+<span class="linenos">148</span>            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;(B)lue &#39;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+<span class="linenos">149</span>            <span class="n">bext</span><span class="o">.</span><span class="n">fg</span><span class="p">(</span><span class="s1">&#39;yellow&#39;</span><span class="p">)</span>
+<span class="linenos">150</span>            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;(Y)ellow &#39;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+<span class="linenos">151</span>            <span class="n">bext</span><span class="o">.</span><span class="n">fg</span><span class="p">(</span><span class="s1">&#39;cyan&#39;</span><span class="p">)</span>
+<span class="linenos">152</span>            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;(C)yan &#39;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+<span class="linenos">153</span>            <span class="n">bext</span><span class="o">.</span><span class="n">fg</span><span class="p">(</span><span class="s1">&#39;purple&#39;</span><span class="p">)</span>
+<span class="linenos">154</span>            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;(P)urple &#39;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+<span class="linenos">155</span>        <span class="k">elif</span> <span class="n">displayMode</span> <span class="o">==</span> <span class="n">SHAPE_MODE</span><span class="p">:</span>
+<span class="linenos">156</span>            <span class="n">bext</span><span class="o">.</span><span class="n">fg</span><span class="p">(</span><span class="s1">&#39;red&#39;</span><span class="p">)</span>
+<span class="linenos">157</span>            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;(H)eart, &#39;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+<span class="linenos">158</span>            <span class="n">bext</span><span class="o">.</span><span class="n">fg</span><span class="p">(</span><span class="s1">&#39;green&#39;</span><span class="p">)</span>
+<span class="linenos">159</span>            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;(T)riangle, &#39;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+<span class="linenos">160</span>            <span class="n">bext</span><span class="o">.</span><span class="n">fg</span><span class="p">(</span><span class="s1">&#39;blue&#39;</span><span class="p">)</span>
+<span class="linenos">161</span>            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;(D)iamond, &#39;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+<span class="linenos">162</span>            <span class="n">bext</span><span class="o">.</span><span class="n">fg</span><span class="p">(</span><span class="s1">&#39;yellow&#39;</span><span class="p">)</span>
+<span class="linenos">163</span>            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;(B)all, &#39;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+<span class="linenos">164</span>            <span class="n">bext</span><span class="o">.</span><span class="n">fg</span><span class="p">(</span><span class="s1">&#39;cyan&#39;</span><span class="p">)</span>
+<span class="linenos">165</span>            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;(C)lub, &#39;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+<span class="linenos">166</span>            <span class="n">bext</span><span class="o">.</span><span class="n">fg</span><span class="p">(</span><span class="s1">&#39;purple&#39;</span><span class="p">)</span>
+<span class="linenos">167</span>            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;(S)pade, &#39;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+<span class="linenos">168</span>        <span class="n">bext</span><span class="o">.</span><span class="n">fg</span><span class="p">(</span><span class="s1">&#39;white&#39;</span><span class="p">)</span>
+<span class="linenos">169</span>        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;or QUIT:&#39;</span><span class="p">)</span>
+<span class="linenos">170</span>        <span class="n">response</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;&gt; &#39;</span><span class="p">)</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>
+<span class="linenos">171</span>        <span class="k">if</span> <span class="n">response</span> <span class="o">==</span> <span class="s1">&#39;QUIT&#39;</span><span class="p">:</span>
+<span class="linenos">172</span>            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Thanks for playing!&#39;</span><span class="p">)</span>
+<span class="linenos">173</span>            <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">()</span>
+<span class="linenos">174</span>        <span class="k">if</span> <span class="n">displayMode</span> <span class="o">==</span> <span class="n">COLOR_MODE</span> <span class="ow">and</span> <span class="n">response</span> <span class="ow">in</span> <span class="nb">tuple</span><span class="p">(</span><span class="s1">&#39;RGBYCP&#39;</span><span class="p">):</span>
+<span class="linenos">175</span>            <span class="c1"># Return a tile type number based on the response:</span>
+<span class="linenos">176</span>            <span class="k">return</span> <span class="p">{</span><span class="s1">&#39;R&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;G&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;B&#39;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+<span class="linenos">177</span>                <span class="s1">&#39;Y&#39;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span> <span class="s1">&#39;C&#39;</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span> <span class="s1">&#39;P&#39;</span><span class="p">:</span> <span class="mi">5</span><span class="p">}[</span><span class="n">response</span><span class="p">]</span>
+<span class="linenos">178</span>        <span class="k">if</span> <span class="n">displayMode</span> <span class="o">==</span> <span class="n">SHAPE_MODE</span> <span class="ow">and</span> <span class="n">response</span> <span class="ow">in</span> <span class="nb">tuple</span><span class="p">(</span><span class="s1">&#39;HTDBCS&#39;</span><span class="p">):</span>
+<span class="linenos">179</span>            <span class="c1"># Return a tile type number based on the response:</span>
+<span class="linenos">180</span>            <span class="k">return</span> <span class="p">{</span><span class="s1">&#39;H&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;T&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;D&#39;</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span>
+<span class="linenos">181</span>                <span class="s1">&#39;B&#39;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span> <span class="s1">&#39;C&#39;</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span> <span class="s1">&#39;S&#39;</span><span class="p">:</span> <span class="mi">5</span><span class="p">}[</span><span class="n">response</span><span class="p">]</span>
+<span class="linenos">182</span>
+<span class="linenos">183</span>
+<span class="linenos">184</span><span class="k">def</span> <span class="nf">changeTile</span><span class="p">(</span><span class="n">tileType</span><span class="p">,</span> <span class="n">board</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">charToChange</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+<span class="linenos">185</span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Change the color/shape of a tile using the recursive flood fill</span>
+<span class="linenos">186</span><span class="sd">    algorithm.&quot;&quot;&quot;</span>
+<span class="linenos">187</span>    <span class="k">if</span> <span class="n">x</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">y</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+<span class="linenos">188</span>        <span class="n">charToChange</span> <span class="o">=</span> <span class="n">board</span><span class="p">[(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)]</span>
+<span class="linenos">189</span>        <span class="k">if</span> <span class="n">tileType</span> <span class="o">==</span> <span class="n">charToChange</span><span class="p">:</span>
+<span class="linenos">190</span>            <span class="k">return</span>  <span class="c1"># Base Case: Already is the same tile.</span>
+<span class="linenos">191</span>
+<span class="linenos">192</span>    <span class="n">board</span><span class="p">[(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)]</span> <span class="o">=</span> <span class="n">tileType</span>
+<span class="linenos">193</span>
+<span class="linenos">194</span>    <span class="k">if</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">board</span><span class="p">[(</span><span class="n">x</span> <span class="o">-</span> <span class="mi">1</span><span class="p">,</span> <span class="n">y</span><span class="p">)]</span> <span class="o">==</span> <span class="n">charToChange</span><span class="p">:</span>
+<span class="linenos">195</span>        <span class="c1"># Recursive Case: Change the left neighbor&#39;s tile:</span>
+<span class="linenos">196</span>        <span class="n">changeTile</span><span class="p">(</span><span class="n">tileType</span><span class="p">,</span> <span class="n">board</span><span class="p">,</span> <span class="n">x</span> <span class="o">-</span> <span class="mi">1</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">charToChange</span><span class="p">)</span>
+<span class="linenos">197</span>    <span class="k">if</span> <span class="n">y</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">board</span><span class="p">[(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)]</span> <span class="o">==</span> <span class="n">charToChange</span><span class="p">:</span>
+<span class="linenos">198</span>        <span class="c1"># Recursive Case: Change the top neighbor&#39;s tile:</span>
+<span class="linenos">199</span>        <span class="n">changeTile</span><span class="p">(</span><span class="n">tileType</span><span class="p">,</span> <span class="n">board</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="o">-</span> <span class="mi">1</span><span class="p">,</span> <span class="n">charToChange</span><span class="p">)</span>
+<span class="linenos">200</span>    <span class="k">if</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="n">BOARD_WIDTH</span> <span class="o">-</span> <span class="mi">1</span> <span class="ow">and</span> <span class="n">board</span><span class="p">[(</span><span class="n">x</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">y</span><span class="p">)]</span> <span class="o">==</span> <span class="n">charToChange</span><span class="p">:</span>
+<span class="linenos">201</span>        <span class="c1"># Recursive Case: Change the right neighbor&#39;s tile:</span>
+<span class="linenos">202</span>        <span class="n">changeTile</span><span class="p">(</span><span class="n">tileType</span><span class="p">,</span> <span class="n">board</span><span class="p">,</span> <span class="n">x</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">charToChange</span><span class="p">)</span>
+<span class="linenos">203</span>    <span class="k">if</span> <span class="n">y</span> <span class="o">&lt;</span> <span class="n">BOARD_HEIGHT</span> <span class="o">-</span> <span class="mi">1</span> <span class="ow">and</span> <span class="n">board</span><span class="p">[(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)]</span> <span class="o">==</span> <span class="n">charToChange</span><span class="p">:</span>
+<span class="linenos">204</span>        <span class="c1"># Recursive Case: Change the bottom neighbor&#39;s tile:</span>
+<span class="linenos">205</span>        <span class="n">changeTile</span><span class="p">(</span><span class="n">tileType</span><span class="p">,</span> <span class="n">board</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">charToChange</span><span class="p">)</span>
+<span class="linenos">206</span>
+<span class="linenos">207</span>
+<span class="linenos">208</span><span class="k">def</span> <span class="nf">hasWon</span><span class="p">(</span><span class="n">board</span><span class="p">):</span>
+<span class="linenos">209</span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Return True if the entire board is one color/shape.&quot;&quot;&quot;</span>
+<span class="linenos">210</span>    <span class="n">tile</span> <span class="o">=</span> <span class="n">board</span><span class="p">[(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)]</span>
+<span class="linenos">211</span>
+<span class="linenos">212</span>    <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">BOARD_WIDTH</span><span class="p">):</span>
+<span class="linenos">213</span>        <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">BOARD_HEIGHT</span><span class="p">):</span>
+<span class="linenos">214</span>            <span class="k">if</span> <span class="n">board</span><span class="p">[(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)]</span> <span class="o">!=</span> <span class="n">tile</span><span class="p">:</span>
+<span class="linenos">215</span>                <span class="k">return</span> <span class="kc">False</span>
+<span class="linenos">216</span>    <span class="k">return</span> <span class="kc">True</span>
+<span class="linenos">217</span>
+<span class="linenos">218</span>
+<span class="linenos">219</span><span class="c1"># If this program was run (instead of imported), run the game:</span>
+<span class="linenos">220</span><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+<span class="linenos">221</span>    <span class="n">main</span><span class="p">()</span>
+</pre></div>
+</div>
+</details><p><a class="reference external" href="https://inventwithpython.com/bigbookpython/project28.html">https://inventwithpython.com/bigbookpython/project28.html</a></p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="fish_tank.html" class="btn btn-neutral float-left" title="Fish Tank" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="forest_fire_sim.html" class="btn btn-neutral float-right" title="Forest Fire Sim" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Marcel Hrdina.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,17 @@
+My tags: simulation
+###################
+
+.. toctree::
+    :maxdepth: 1
+    :caption: With this tag
+
+    ../small_projects/birthday_paradox.rst
+    ../small_projects/conways_game_of_life.rst
+    ../small_projects/dice_roller.rst
+    ../small_projects/forest_fire_sim.rst
+    ../small_projects/hourglass.rst
+    ../small_projects/langtons_ant.rst
+    ../small_projects/million_dice_statistics.rst
+    ../small_projects/monty_hall.rst
+    ../small_projects/powerball_lottery.rst
+    ../small_projects/soroban_japanese_abacus.rst

@@ -1,0 +1,91 @@
+*************************************
+The Big Book of Small Python Projects
+*************************************
+
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Contents:
+
+
+   bagels.rst
+   birthday_paradox.rst
+   bitmap_message.rst
+   blackjack.rst
+   bouncing_dvd_logo.rst
+   caesar_cipher.rst
+   caesar_hacker.rst
+   calendar_maker.rst
+   carrot_in_a_box.rst
+   cho_han.rst
+   clickbait_headline_generator.rst
+   collatz_sequence.rst
+   conways_game_of_life.rst
+   countdown.rst
+   deep_cave.rst
+   diamonds.rst
+   dice_math.rst
+   dice_roller.rst
+   digital_clock.rst
+   digital_stream.rst
+   dna_visualization.rst
+   ducklings.rst
+   etching_drawer.rst
+   factor_finder.rst
+   fast_draw.rst
+   fibonacci.rst
+   fish_tank.rst
+   flooder.rst
+   forest_fire_sim.rst
+   four_in_a_row.rst
+   guess_the_number.rst
+   gullible.rst
+   hacking_minigame.rst
+   hangman_and_guillotine.rst
+   hex_grid.rst
+   hourglass.rst
+   hungry_robots.rst
+   jaccuse.rst
+   langtons_ant.rst
+   leetspeak.rst
+   lucky_stars.rst
+   magic_fortune_ball.rst
+   mancala.rst
+   maze_runner_2d.rst
+   maze_runner_3d.rst
+   million_dice_statistics.rst
+   mondrian_art_generator.rst
+   monty_hall.rst
+   multiplication_table.rst
+   ninety_nine_bottles.rst
+   ninety_nniine_boottels.rst
+   numeral_systems.rst
+   periodic_table_of_the_elements.rst
+   pig_latin.rst
+   powerball_lottery.rst
+   prime_numbers.rst
+   progress_bar.rst
+   rainbow.rst
+   rock_paper_scissors.rst
+   rock_paper_scissors_always-win_version.rst
+   rot13_cipher.rst
+   rotating_cube.rst
+   royal_game_of_ur.rst
+   seven-segment_display_module.rst
+   shining_carpet.rst
+   simple_substitution_cipher.rst
+   sine_message.rst
+   sliding_tile_puzzle.rst
+   snail_race.rst
+   soroban_japanese_abacus.rst
+   sound_mimic.rst
+   spongecase.rst
+   sudoku_puzzle.rst
+   text_to_speech_talker.rst
+   three-card_monte.rst
+   tic-tac-toe.rst
+   tower_of_hanoi.rst
+   trick_questions.rst
+   twenty_forty_eight.rst
+   vigenere_cipher.rst
+   water_bucket_puzzle.rst
