@@ -14,6 +14,7 @@ author = 'Marcel Hrdina'
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
 extensions = [
+        "sphinx.ext.todo",
         "sphinx_tags",
         "sphinx_rtd_theme",
         "sphinx_toolbox.collapse",]
@@ -31,6 +32,8 @@ html_static_path = ['_static']
 
 
 tags_create_tags = True
+
+todo_include_todos = True
 
 html_theme_options = {
         'collapse_navigation': False,
