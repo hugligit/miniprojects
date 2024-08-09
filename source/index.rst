@@ -12,6 +12,7 @@
 
 
    small_projects/index.rst
+   cryptography/index.rst
    coding_math/index.rst
    shaders/index.rst
    coding_train/index.rst
@@ -25,3 +26,5 @@ Indices and tables
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
+
+.. todolist::
