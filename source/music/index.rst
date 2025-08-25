@@ -126,20 +126,27 @@ smaller speaker systems.
 Chip Kick 
 ----------
 
-description
+This usese a single layer to create a harsh, digital sounding kick drum
+that is reminiscent of the 8-bit computing era. A sawtooth wave creates
+the body of the sound (tuned to A1 in this example). The BIT, FLD and DRV
+effects add harmonics in the upper mid-range. Pitch modulation using
+a Rise/Fall shape generates an ATTACK section with higer frequencies. The
+exponential Attack/Release wave creates a rapid ATTACK and medium RELEASE
+phase. The LEVEL of Layer 2 is set to 0, so the remaining Layer 2 settings
+have no effect.
 
 .. drumkitpart::
 
-   - - -
+   saw 255 A1
+   rmp 28 128
+   exp 0 133
+
+   - 0 -
    - - -
    - - -
 
-   - - -
-   - - -
-   - - -
-
-   - - -
-   - - -
+   255 76 255
+   0 0 0
 
 
 .. }}}
