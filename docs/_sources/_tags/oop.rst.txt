@@ -1,9 +1,0 @@
-My tags: oop
-############
-
-.. toctree::
-    :maxdepth: 1
-    :caption: With this tag
-
-    ../small_projects/ducklings.rst
-    ../small_projects/sudoku_puzzle.rst
