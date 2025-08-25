@@ -22,8 +22,9 @@ jobs:
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 
       - name: Build HTML
-        run: sphinx-build -b html source docs
-		touch docs/.nojekyll    # disable Jekyll
+        run: |
+		  sphinx-build -b html source docs
+		  touch docs/.nojekyll 
 
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v3
