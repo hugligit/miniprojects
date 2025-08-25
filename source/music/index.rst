@@ -93,20 +93,31 @@ notes do not overlap too much).
 A1 Kick Long 
 -------------
 
-description
+This is a very long kick drum that is well suited to a low tempo rhytms in
+which the kick has time to fade away before it is triggered again. For
+example, it could be used as little as once in a 16-step pattern, or
+perhaps twice. Try it on step 1 and step 14c oa 88bpm.
+
+This is identical to the original A1 Kick except for the Layer 1 RELEASE
+time, which is now at the maximum 255 setting. This causes the main
+low-frequency wave to remain audible for much longer.
+
+Try reducing the RELEASE time if the sound is too long. Also try
+increasing the FLD and DRV settings to make the REL phase more audible on
+smaller speaker systems.
 
 .. drumkitpart::
 
-   - - -
-   - - -
-   - - -
+   sin 255 A1
+   rmp 39 144
+   exp 0 255
 
-   - - -
-   - - -
-   - - -
+   sin 47 A1
+   smp 60 130
+   exp 0 96
 
-   - - -
-   - - -
+   0 78 24
+   0 0 0
 
 
 .. }}}
