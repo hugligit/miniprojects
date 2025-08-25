@@ -1,3 +1,15 @@
+import os
+import sys
+from pathlib import Path
+sys.path.append(str(Path('_ext').resolve()))
+
+# sys.path.insert(0, os.path.abspath('_ext'))
+# from volca_patch import VolcaPatchDirective
+# from docutils.parsers.rst import directives
+# def setup(app):
+#     app.add_directive("volca-patch", VolcaPatchDirective)
+
+
 # Configuration file for the Sphinx documentation builder.
 #
 # For the full list of built-in configuration values, see the documentation:
@@ -17,7 +29,12 @@ extensions = [
         "sphinx.ext.todo",
         "sphinx_tags",
         "sphinx_rtd_theme",
-        "sphinx_toolbox.collapse",]
+        "sphinx_toolbox.collapse",
+        "volca_patch"
+        ]
+
+
+
 
 templates_path = ['_templates']
 exclude_patterns = []

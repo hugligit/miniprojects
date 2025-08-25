@@ -17,7 +17,12 @@
    shaders/index.rst
    coding_train/index.rst
    nature_of_code/index.rst
+   recursion/index.rst
    games/index.rst
+   music/index.rst
+   mathsadventures/index.rst
+   mathwithpython/index.rst
+   pythonplayground/index.rst
 
 
 Indices and tables
