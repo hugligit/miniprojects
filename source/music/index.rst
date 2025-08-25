@@ -126,7 +126,7 @@ smaller speaker systems.
 Chip Kick 
 ----------
 
-This usese a single layer to create a harsh, digital sounding kick drum
+This uses a single layer to create a harsh, digital sounding kick drum
 that is reminiscent of the 8-bit computing era. A sawtooth wave creates
 the body of the sound (tuned to A1 in this example). The BIT, FLD and DRV
 effects add harmonics in the upper mid-range. Pitch modulation using
