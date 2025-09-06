@@ -30,7 +30,8 @@ extensions = [
         "sphinx_tags",
         "sphinx_rtd_theme",
         "sphinx_toolbox.collapse",
-        "volca_patch"
+        "volca_patch",
+        "chordlyrics"
         ]
 
 
@@ -58,3 +59,7 @@ html_theme_options = {
         'navigation_depth': 4,
         'titles_only': False,
         }
+
+
+def setup(app):
+    app.add_css_file("chords.css")
