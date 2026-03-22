@@ -1,0 +1,11 @@
+.. _sphx_tag_module:
+
+My tags: module
+###############
+
+.. toctree::
+    :maxdepth: 1
+    :caption: With this tag
+
+    ../small_projects/progress_bar.rst
+    ../small_projects/seven-segment_display_module.rst

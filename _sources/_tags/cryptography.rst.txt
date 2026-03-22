@@ -1,0 +1,14 @@
+.. _sphx_tag_cryptography:
+
+My tags: cryptography
+#####################
+
+.. toctree::
+    :maxdepth: 1
+    :caption: With this tag
+
+    ../small_projects/caesar_cipher.rst
+    ../small_projects/caesar_hacker.rst
+    ../small_projects/rot13_cipher.rst
+    ../small_projects/simple_substitution_cipher.rst
+    ../small_projects/vigenere_cipher.rst

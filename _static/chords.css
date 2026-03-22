@@ -1,0 +1,65 @@
+/* .chord { */
+/*   font-weight: bold; */
+/*   color: darkred; */
+/*   position: relative; */
+/*   top: -0.7em; /1* lifts chord above lyric *1/ */
+/*   margin-right: 2px; */
+/* } */
+
+
+
+/* Increase spacing between lyric lines */
+.lyrics-line {
+  display: block;
+  margin-bottom: 0.0em; /* adjust this to taste */
+  line-height: 1.0;     /* more generous line spacing */
+  margin-bottom: 1.5em;
+  font-family: sans-serif;
+}
+
+/* Each chord marker floats above the text */
+.chord {
+  position: absolute;
+  transform: translateY(-1.2em); /* lift chord above lyric text */
+  font-weight: bold;
+  color: #b22222;
+  font-size: 0.9em;
+  white-space: nowrap;
+  pointer-events: none; /* make sure chord text isn’t selectable */
+}
+
+/* Wrap to keep chord+lyric aligned */
+.chord-anchor {
+  position: relative;   /* anchor for absolute chord */
+  display: inline-block;
+}
+
+.lyrics-comment {
+  color: #666;           /* dull grey */
+  font-style: italic;
+  font-size: 0.9em;
+  margin-bottom: 1em;      /* no extra spacing */
+  margin-top: 0.2em;     /* tiny spacing above */
+}
+
+
+.instrumental-line {
+  display: block;
+  margin: 0.2em 0;       /* very compact spacing */
+  font-family: monospace, Courier, sans-serif;
+  font-size: 1em;
+  color: #333;
+}
+
+.instrumental-chord {
+  display: inline-block;
+  padding: 0.1em 0.4em;
+  margin-right: 0.4em;
+  border: 1px solid #aaa;
+  border-radius: 0.3em;
+  background: #f7f7f7;
+  font-weight: bold;
+}
+
+
+

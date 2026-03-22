@@ -1,0 +1,11 @@
+.. _sphx_tag_maze:
+
+My tags: maze
+#############
+
+.. toctree::
+    :maxdepth: 1
+    :caption: With this tag
+
+    ../small_projects/maze_runner_2d.rst
+    ../small_projects/maze_runner_3d.rst

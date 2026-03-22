@@ -1,0 +1,12 @@
+.. _sphx_tag_huge:
+
+My tags: huge
+#############
+
+.. toctree::
+    :maxdepth: 1
+    :caption: With this tag
+
+    ../small_projects/fish_tank.rst
+    ../small_projects/jaccuse.rst
+    ../small_projects/maze_runner_3d.rst

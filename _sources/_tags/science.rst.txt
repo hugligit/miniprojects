@@ -1,0 +1,11 @@
+.. _sphx_tag_science:
+
+My tags: science
+################
+
+.. toctree::
+    :maxdepth: 1
+    :caption: With this tag
+
+    ../small_projects/dna_visualization.rst
+    ../small_projects/periodic_table_of_the_elements.rst
